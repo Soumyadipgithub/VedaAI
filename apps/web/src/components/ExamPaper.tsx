@@ -93,8 +93,7 @@ export default function ExamPaper({ assignment, mobile = false }: ExamPaperProps
             <div className="flex flex-col" style={{ gap: 8 }}>
               {section.questions.map((q, qi) => (
                 <p key={qi} className="font-paper" style={{ fontSize: 13, fontWeight: 400, color: "#303030", lineHeight: "1.7" }}>
-                  <span style={{ color: "#5E5E5E", fontSize: 11 }}>{diffTag(q.difficulty)} </span>
-                  {qi + 1}.&nbsp;{q.text}&nbsp;
+                  {qi + 1}.&nbsp;<span style={{ color: "#5E5E5E", fontSize: 11 }}>{diffTag(q.difficulty)} </span>{q.text}&nbsp;
                   <span style={{ color: "#5E5E5E", fontWeight: 600 }}>[{q.marks} Marks]</span>
                 </p>
               ))}
