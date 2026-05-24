@@ -1,12 +1,13 @@
 # VedaAI — AI Assessment Creator
 
-Round-2 full-stack assignment for VedaAI. A teacher fills a form, an LLM
-job pipeline generates a structured question paper, and the frontend
-renders it as a real-exam-paper page.
+A full-stack web application that lets a teacher describe an assessment in
+natural language, dispatches a background job to an LLM, parses the response
+into a strictly-typed schema, and renders the result as a real
+exam-paper-style page in the browser.
 
-> **For agents reading this repo:** start at [`CLAUDE.md`](CLAUDE.md) and
-> follow the mandatory reading order it defines. This README is for
-> humans.
+The job pipeline is asynchronous end-to-end: the HTTP request returns
+immediately with a job id; the worker generates the paper out-of-band; the
+client is notified over a WebSocket the moment it is ready.
 
 ---
 
@@ -28,204 +29,162 @@ Browser│  apps/web       │  REST + WebSocket (Socket.IO)  │  apps/api     
                                                           ┌──────────────────┐
                                                           │  apps/worker     │
                                                           │  BullMQ + LLM    │
-                                                          │  (Gemini 2.0)    │
                                                           └────────┬─────────┘
                                                                    │ persist
                                                                    ▼
                                                           ┌──────────────────┐
                                                           │  MongoDB         │
-                                                          │  (assignments)   │
                                                           └──────────────────┘
 ```
 
-**Hard rule:** the worker parses the LLM string into the Zod schema in
-`@veda/shared-types` *before* persisting. The frontend never sees raw
-LLM output.
+Three independent Node processes share a single Mongo + Redis backplane and
+a single shared-types package. Each process is deployed as its own service.
+
+### Request lifecycle
+
+1. The browser POSTs the form to `apps/api`. The API validates the body with
+   a Zod schema and persists a `pending` Assignment in Mongo.
+2. The API enqueues a `generate` job on a BullMQ queue keyed on the
+   assignment id.
+3. `apps/worker` picks up the job, builds a structured prompt, calls Gemini
+   with a JSON response schema, parses the result against the **same** Zod
+   schema the form was validated with, and updates the Mongo doc to `done`.
+4. The worker publishes a `job-events` message on Redis. The API listens on
+   that channel and re-broadcasts it as a Socket.IO event into the
+   `job:<id>` room.
+5. The browser, joined to that room since submission, navigates to the
+   output page when `job:done` arrives. If the WebSocket reconnects mid-job,
+   the client re-fetches the assignment by id and the UI reconciles.
+
+### Why a queue, not a synchronous call
+
+LLM round-trips run multiple seconds and occasionally fail. Holding an HTTP
+connection open across that window is brittle. The queue lets the API
+respond in <100ms, makes retries explicit, and keeps the LLM call off the
+critical path of the request thread.
+
+### Why the same Zod schema on both sides
+
+The schema in `@veda/shared-types` is the contract between the LLM and the
+UI. Reusing it as the API's input validator and the worker's output parser
+means a single source of truth — there is no shape of data that the UI can
+render but the API cannot store, or vice versa.
 
 ---
 
-## Repo layout — pnpm workspaces
+## Repository layout
 
 ```
 veda-ai/
 ├── apps/
-│   ├── web/          Next.js 15 + TS + Tailwind  (public Railway service)
-│   ├── api/          Express 4 + Socket.IO 4     (public Railway service)
-│   └── worker/       BullMQ consumer + LLM       (private Railway service)
+│   ├── web/          Next.js 15, App Router, Tailwind, Zustand, RHF + Zod
+│   ├── api/          Express 4, Socket.IO 4, Mongoose, BullMQ producer
+│   └── worker/       BullMQ consumer, Gemini SDK, Zod parser
 ├── packages/
-│   └── shared-types/  @veda/shared-types — Zod schemas shared by all 3 apps
-├── doc/              Spec, design extract, execution plan (read CLAUDE.md first)
-├── package.json      Root workspace + scripts
+│   └── shared-types/ Zod schemas + TS types, imported by all three apps
+├── package.json      Workspace scripts
 ├── pnpm-workspace.yaml
 ├── tsconfig.base.json
-├── .env.example      Master list of every env var
-└── .gitignore
+└── .env.example      Every env var the codebase reads
 ```
 
-Each app deploys as its own Railway service. The shared package is
-TS-only (no build step) — imported directly via the `workspace:*`
-protocol.
+The shared package is TypeScript-only (no build step) and is consumed via
+the `workspace:*` protocol. There is no Turborepo — three small apps did
+not justify the configuration overhead.
 
 ---
 
-## Local setup
+## Local development
 
-**Prereqs:** Node ≥ 20, pnpm ≥ 9, Docker (optional, for local Mongo +
-Redis), a Gemini API key from <https://aistudio.google.com>.
+**Prerequisites:** Node ≥ 20, pnpm ≥ 9, MongoDB, Redis, a Gemini API key
+from <https://aistudio.google.com>.
 
 ```bash
-# 1. Install deps across all workspaces
 pnpm install
 
-# 2. Copy env vars and fill in your Gemini key
 cp .env.example .env
-#  → set GEMINI_API_KEY
+# fill in GEMINI_API_KEY
 
-# 3. (Optional) spin up local Mongo + Redis
+# Optional: spin up local Mongo + Redis via Docker
 docker run -d -p 27017:27017 --name veda-mongo mongo:7
 docker run -d -p 6379:6379  --name veda-redis redis:7
 
-# 4. Run all three apps in parallel
 pnpm dev
 #   web    → http://localhost:3000
-#   api    → http://localhost:4000   (try /health)
-#   worker → console heartbeat
+#   api    → http://localhost:4000   (GET /health)
+#   worker → console log heartbeat
 ```
 
 Per-app scripts:
 
 ```bash
-pnpm dev:web      # apps/web only
-pnpm dev:api      # apps/api only
-pnpm dev:worker   # apps/worker only
+pnpm dev:web
+pnpm dev:api
+pnpm dev:worker
 pnpm typecheck    # all workspaces
-pnpm build        # all workspaces (Next.js builds; api/worker run via tsx)
+pnpm build        # next build for web; api/worker run via tsx
 ```
 
 ---
 
-## Deployment — Railway single-platform
+## Tech stack
 
-All five services live in **one** Railway project, free during the $5
-trial credit window. LLM (Gemini 2.0 Flash) is free via Google AI Studio.
-
-### One-time setup
-
-1. Sign in to <https://railway.com> with GitHub.
-2. **New Project → Deploy from GitHub repo** → pick this repo.
-3. Add five services into the same project:
-
-   | Service       | How                                       | Root dir        | Start command                                |
-   | ------------- | ----------------------------------------- | --------------- | -------------------------------------------- |
-   | `web`         | New → GitHub Repo (this repo)             | `/`             | `pnpm install --frozen-lockfile && pnpm --filter web build && pnpm --filter web start` |
-   | `api`         | New → GitHub Repo (this repo)             | `/`             | `pnpm install --frozen-lockfile && pnpm --filter api start` |
-   | `worker`      | New → GitHub Repo (this repo)             | `/`             | `pnpm install --frozen-lockfile && pnpm --filter worker start` |
-   | MongoDB       | New → Database → MongoDB (1-click plugin) | —               | —                                            |
-   | Redis         | New → Database → Redis (1-click plugin)   | —               | —                                            |
-
-   > Each app service uses the **repo root** as its root dir so the pnpm
-   > workspace resolves `@veda/shared-types` from `packages/`. The build
-   > step is in the Start Command because the workspace install needs
-   > the full repo. Set this under each service's Settings → Deploy.
-
-4. **Public networking:** open Settings → Networking on `web` and `api`
-   only → **Generate Domain**. Leave `worker` private.
-
-5. **Environment variables** — set per service via the Variables tab.
-   Use Railway's `${{ Service.VARIABLE }}` reference syntax:
-
-   **apps/web**
-   ```
-   NEXT_PUBLIC_API_URL = https://${{ api.RAILWAY_PUBLIC_DOMAIN }}
-   NEXT_PUBLIC_WS_URL  = https://${{ api.RAILWAY_PUBLIC_DOMAIN }}
-   NODE_ENV            = production
-   ```
-
-   **apps/api**
-   ```
-   PORT           = ${{ PORT }}                  # Railway injects automatically
-   NODE_ENV       = production
-   MONGODB_URI    = ${{ MongoDB.MONGO_URL }}
-   REDIS_URL      = ${{ Redis.REDIS_URL }}
-   CORS_ORIGINS   = https://${{ web.RAILWAY_PUBLIC_DOMAIN }}
-   GEMINI_API_KEY = <paste from Google AI Studio>
-   GEMINI_MODEL   = gemini-2.0-flash
-   ```
-
-   **apps/worker**
-   ```
-   NODE_ENV       = production
-   MONGODB_URI    = ${{ MongoDB.MONGO_URL }}
-   REDIS_URL      = ${{ Redis.REDIS_URL }}
-   GEMINI_API_KEY = <same as api>
-   GEMINI_MODEL   = gemini-2.0-flash
-   ```
-
-6. **Acceptance:** open the `api` public URL + `/health` — should return
-   `{"status":"ok","service":"api",...}`. Open the `web` public URL —
-   the Phase-0 placeholder page renders.
-
-### Keep `web` warm — UptimeRobot
-
-Railway sleeps services after 10 min of no outbound traffic. `api` and
-`worker` poll Redis (BullMQ) so they stay warm naturally; `web` does
-not. Set up a free monitor:
-
-1. Sign in to <https://uptimerobot.com>.
-2. **+ New monitor → HTTP(s)**.
-3. URL = your Railway `web` public domain. Interval = 5 minutes.
-4. Save.
-
-That's it. Total monthly cost while the project is active: **$0**.
+| Layer       | Choice                                    | Rationale                                                                       |
+| ----------- | ----------------------------------------- | ------------------------------------------------------------------------------- |
+| Monorepo    | pnpm workspaces                           | Three small apps + one shared package. No Turborepo overhead.                   |
+| FE state    | Zustand                                   | Single small store; lighter than Redux Toolkit for this scope.                  |
+| FE forms    | React Hook Form + Zod                     | Same Zod schema used to parse the LLM response on the server.                   |
+| FE styling  | Tailwind 3 (arbitrary values where needed)| Hit exact pixel values without inflating the spacing scale.                     |
+| Realtime    | Socket.IO 4                               | Room-based broadcast keyed by job id; transparent WebSocket upgrades.           |
+| API runtime | Express 4 on `tsx`                        | Single dependency for TS, no separate build step.                               |
+| ODM         | Mongoose 8                                | Typed schemas; good fit for the small, denormalized assignment shape.           |
+| Job queue   | BullMQ 5 on Redis                         | Mature, simple, retry/backoff included.                                         |
+| LLM         | Gemini 2.5 Flash Lite via `@google/genai` | Native structured-output mode via `responseSchema`; generous free tier.         |
+| PDF export  | `@react-pdf/renderer`                     | No headless browser dependency; same renderer in dev and production.            |
 
 ---
 
-## Environment variables — master list
+## Deployment
 
-See [`.env.example`](.env.example). Every variable the codebase reads is
-listed there with the right default for local dev plus a comment block
-showing the Railway production value.
+The three apps deploy as independent services. The reference deployment
+runs on Railway (web, api, worker, plus Mongo and Redis plugins inside the
+same project). Public networking is enabled on `web` and `api`; the worker
+stays private.
+
+Per-service start commands (when the build context is the repo root):
+
+| Service | Start command                                                                          |
+| ------- | -------------------------------------------------------------------------------------- |
+| web     | `pnpm install --frozen-lockfile && pnpm --filter web build && pnpm --filter web start` |
+| api     | `pnpm install --frozen-lockfile && pnpm --filter api start`                            |
+| worker  | `pnpm install --frozen-lockfile && pnpm --filter worker start`                         |
+
+Environment variables — see [`.env.example`](.env.example) for the full
+list. On Railway, use the `${{ Service.VARIABLE }}` reference syntax so
+internal URLs (Mongo, Redis, the API's public domain) resolve at deploy
+time rather than being pasted as literals.
 
 ---
 
-## Tech stack rationale
+## Validation contract
 
-| Layer    | Choice                                  | Why                                                                                                |
-| -------- | --------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| Monorepo | pnpm workspaces (no Turborepo)          | Three small apps + one shared package. Turborepo overhead is unwarranted for 24h scope.            |
-| FE state | Zustand                                 | Faster to wire than Redux Toolkit; sufficient for this scope. Spec allows either.                  |
-| Styling  | Tailwind 3 with arbitrary values        | Lets us hit pixel-perfect values (e.g. `p-[24px]`) without bloating the spacing scale.             |
-| Forms    | React Hook Form + Zod                   | Type-safe validation; same Zod schema used on server for LLM parsing.                              |
-| WS       | Socket.IO 4                             | Room-based broadcast (`job:<id>`), Railway proxies WebSocket upgrades natively.                    |
-| LLM      | Google Gemini 2.0 Flash via @google/genai | Free 1500 req/day; native JSON mode via `responseSchema`. No paid API needed.                    |
-| Runtime  | `tsx` for api + worker (no tsc build)   | Skips the TS → JS build step. Fast cold boot, single dependency. Next.js handles its own build.    |
-| Hosting  | Railway single-platform                 | One dashboard for web + api + worker + Mongo + Redis. $5 trial credit covers build + evaluation.   |
+The form fields, the API's input parser, and the LLM's output parser are
+all defined by the same Zod schemas in `@veda/shared-types`. The API
+rejects malformed input before enqueueing. The worker rejects malformed
+LLM output before persisting — on a parse failure the job is retried once
+with a stricter prompt and, if it fails again, the assignment is marked
+`failed` and the failure is broadcast to the room.
 
----
-
-## Project status
-
-- [x] **Phase 0** — Scaffold + deploy pipeline
-- [ ] Phase 1 — Backend skeleton (Mongoose, BullMQ producer, Socket.IO, routes)
-- [ ] Phase 2 — Worker + Gemini LLM pipeline + Zod parser
-- [ ] Phase 3 — Frontend shell (tokens, fonts, sidebar, top bars)
-- [ ] Phase 4 — Four screens, pixel-perfect Figma replication
-- [ ] Phase 5 — Form ↔ API ↔ WS ↔ output page integration
-- [ ] Phase 6 — Polish, states, difficulty badges
-- [ ] Phase 7 — Bonus (PDF export, regenerate)
-- [ ] Phase 8 — Final QA + submit
-
-See [`doc/EXECUTION_PLAN.md`](doc/EXECUTION_PLAN.md) for the full
-24-hour plan, per-phase acceptance checkpoints, and the bottleneck
-register.
+No raw LLM string is ever rendered.
 
 ---
 
 ## Known limitations
 
-- Phase 0 ships an empty placeholder UI. Real screens land in Phase 3/4.
-- `apps/api` and `apps/worker` run via `tsx` in production. Fine for
-  the assignment scope; for higher throughput, switch to a `tsc` build.
-- One LLM provider wired (Gemini). Fallback to Groq + Llama is
-  documented in `doc/EXECUTION_PLAN.md` §0 but not implemented unless
-  Gemini's free quota becomes a problem.
+- `apps/api` and `apps/worker` run via `tsx` in production. Acceptable for
+  this scope; a `tsc` build would shave a few hundred milliseconds off
+  cold boot.
+- One LLM provider wired. Swapping to a different provider only requires
+  re-implementing `apps/worker/src/llm/`.
+- No structured logger yet — operational logging goes through `console.*`
+  with `[service]` prefixes.

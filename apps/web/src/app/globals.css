@@ -2,5 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Design tokens (colors / typography / shadows) wired in Phase 3
-   from doc/DESIGN_SPECS.md §1. */
+/* Design tokens */
+:root {
+  --color-brand-orange: #ff5623;
+  --color-brand-orange-pill: #ff7950;
+  --color-navy: #011625;
+  --color-navy-light: #417ba4;
+  --color-red: #ff4040;
+  --color-text-primary: #303030;
+  --color-text-secondary: #5e5e5e;
+  --color-text-disabled: #a9a9a9;
+  --color-bg-white: #ffffff;
+  --color-bg-off-white: #f6f6f6;
+  --color-bg-off-white-20: #f0f0f0;
+  --color-bg-off-white-50: #cecece;
+  --color-grey-2: #d4d4d4;
+  --color-btn-dark: #181818;
+  --shadow-card: 0px 16px 24px rgba(0, 0, 0, 0.12), 0px 32px 24px rgba(0, 0, 0, 0.2);
+  --shadow-realistic: 0px 16px 48px rgba(0, 0, 0, 0.12), 0px 32px 48px rgba(0, 0, 0, 0.2);
+  --shadow-illustration: 0px 20px 30px rgba(146, 146, 146, 0.19);
+}
+
+/* Bricolage Grotesque optical-sizing — keeps tracking tight at body sizes */
+.font-brand,
+[class*="font-brand"] {
+  font-variation-settings: "opsz" 14, "wdth" 100;
+}
+
+/* Scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #d4d4d4 transparent;
+}
+
+/* Page structure */
+html,
+body {
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+/* Prevents FOUC */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hide browser-native date picker icon so our custom icon shows only */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}

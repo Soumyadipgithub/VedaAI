@@ -39,5 +39,7 @@ yarn-error.log*
 # Test
 coverage/
 
-# Figma raw cache (large, regeneratable)
-doc/.figma-raw/
+# Internal planning + AI-agent rulebooks (kept local, not published)
+CLAUDE.md
+AGENTS.md
+doc/

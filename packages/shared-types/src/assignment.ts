@@ -36,6 +36,10 @@ export type AssignmentStatus = z.infer<typeof AssignmentStatusSchema>;
 
 export const AssignmentInputSchema = z.object({
   title: z.string().min(1).max(200).optional(),
+  schoolName: z.string().max(200).optional(),
+  subject: z.string().max(100).optional(),
+  grade: z.string().max(50).optional(),
+  timeAllowed: z.number().int().positive().max(600).optional(),
   dueDate: z.string().datetime().or(z.string().min(1)),
   questionTypes: z.array(QuestionTypeSchema).min(1),
   numberOfQuestions: z.number().int().positive().max(100),
