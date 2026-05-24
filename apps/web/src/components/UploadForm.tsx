@@ -732,8 +732,30 @@ export default function UploadForm({ onSubmit, onBack, loading = false, formId =
                   style={{ fontSize: 14, fontWeight: 500, color: "#303030", letterSpacing: "-0.56px", lineHeight: "19.6px" }}
                   maxLength={2000}
                 />
-                <button type="button" className="flex items-center justify-center" style={{ width: 36, height: 36, background: "#F0F0F0", borderRadius: 18 }}>
-                  <img src="/icon/Union.png" alt="" style={{ width: 16, height: 16, objectFit: "contain", display: "block" }} />
+                <button
+                  type="button"
+                  onClick={toggleMic}
+                  aria-label={listening ? "Stop dictation" : "Start dictation"}
+                  className="flex items-center justify-center"
+                  style={{
+                    width: 36,
+                    height: 36,
+                    background: listening ? "#FF5623" : "#F0F0F0",
+                    borderRadius: 18,
+                    transition: "background 0.2s",
+                  }}
+                >
+                  <img
+                    src="/icon/Union.png"
+                    alt=""
+                    style={{
+                      width: 16,
+                      height: 16,
+                      objectFit: "contain",
+                      display: "block",
+                      filter: listening ? "brightness(10)" : "none",
+                    }}
+                  />
                 </button>
               </div>
             </div>
