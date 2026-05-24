@@ -1,0 +1,29 @@
+{
+  "name": "veda-ai",
+  "version": "0.1.0",
+  "private": true,
+  "description": "VedaAI Round-2 assignment — AI Assessment Creator. pnpm workspaces (apps/web, apps/api, apps/worker + packages/shared-types).",
+  "packageManager": "pnpm@9.14.4",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "dev": "pnpm -r --parallel run dev",
+    "dev:web": "pnpm --filter web run dev",
+    "dev:api": "pnpm --filter api run dev",
+    "dev:worker": "pnpm --filter worker run dev",
+    "build": "pnpm -r run build",
+    "build:web": "pnpm --filter web run build",
+    "start:web": "pnpm --filter web run start",
+    "start:api": "pnpm --filter api run start",
+    "start:worker": "pnpm --filter worker run start",
+    "lint": "pnpm -r run lint",
+    "typecheck": "pnpm -r run typecheck",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md,mjs,css}\""
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2"
+  }
+}

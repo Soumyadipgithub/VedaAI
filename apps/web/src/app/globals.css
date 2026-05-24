@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design tokens (colors / typography / shadows) wired in Phase 3
+   from doc/DESIGN_SPECS.md §1. */

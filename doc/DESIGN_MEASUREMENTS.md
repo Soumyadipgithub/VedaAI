@@ -1,0 +1,1349 @@
+# Appendix — Measured Distances
+
+> Auto-generated from the Figma REST nodes payload. Mirrors what the Figma inspect panel shows: for every container, each child's size, its margin to each of the parent's four edges (L/R/T/B), and the gap to its adjacent sibling (↕ vertical, ↔ horizontal). All values in **px**.
+
+> Regenerate with `python doc/.figma-raw/measure.py` after refreshing `nodes-all8.json` via the Figma REST API.
+
+## A. 0 State screen (Desktop) (`43:9707`)
+
+- **"0 State screen (Desktop)"** · `1440×780`
+  - ↔ **11px** between "Side Bar" → "Frame 1618872397"
+  - **"Frame 1984077326"** · `1100×678` · margins L=327 R=13 T=90 B=12
+    - **"Frame 1984077553"** · `486×678` · margins L=307 R=307 T=0 B=0
+      - **"Frame 1984077554"** · `486×408` · margins L=0 R=0 T=96 B=174
+        - **"Illustrations"** · `300×300` · margins L=93 R=93 T=0 B=108
+          - **"Illustration found"** · `286.22×240` · margins L=7 R=6.78 T=29 B=31
+            - ↔ **9.46px** between "Page" → "Cloud"
+            - **"Page"** · `124.54×155.03` · margins L=82 R=79.68 T=34.56 B=50.41
+              - **"Page"** · `124.54×155.03` · margins L=0 R=0 T=0 B=0
+              - **"Information"** · `100×121` · margins L=11 R=13.54 T=20 B=14.03
+                - **"Title"** · `50×9.80` · margins L=0 R=50 T=0 B=111.20
+                - **"Text"** · `100×9.80` · margins L=0 R=0 T=27.80 B=83.40
+                - **"Text"** · `100×9.80` · margins L=0 R=0 T=55.60 B=55.60
+                - **"Text"** · `100×9.80` · margins L=0 R=0 T=83.40 B=27.80
+                - **"Text"** · `100×9.80` · margins L=0 R=0 T=111.20 B=0
+            - **"Cloud"** · `70.22×40.39` · margins L=216 R=0 T=17.42 B=182.19
+              - **"Circle"** · `52×12` · margins L=9 R=9.22 T=14.58 B=13.81
+                - **"Rectangle 10"** · `32×12` · margins L=20 R=0 T=0 B=0
+            - **"Lens"** · `163.11×163.17` · margins L=115.61 R=7.50 T=71.56 B=5.27
+            - **"Doodles"** · `284×178.65` · margins L=0 R=2.22 T=31.57 B=29.77
+              - **"Ellipse 67"** · `12×12` · margins L=272 R=0 T=117.43 B=49.23
+        - **"Frame 1984077347"** · `486×96` · margins L=0 R=0 T=312 B=0
+          - **"No assignments yet"** · `181×28` · margins L=152.50 R=152.50 T=0 B=68
+          - **"Create your first assignment to start collecting and grad…"** · `486×66` · margins L=0 R=0 T=30 B=0
+      - **"Primary Button - Dark"** · `277×46` · margins L=104.50 R=104.50 T=536 B=96
+        - ↔ **4px** between "icon_line/Plus" → "Create Your First Assignment"
+        - **"icon_line/Plus"** · `20×20` · margins L=24 R=233 T=13 B=13
+          - **"Group 33489"** · `15×15` · margins L=2.50 R=2.50 T=2.50 B=2.50
+        - **"Create Your First Assignment"** · `205×22` · margins L=48 R=24 T=12 B=12
+  - **"Side Bar"** · `304×756` · margins L=12 R=1124 T=12 B=12
+    - **"Frame 39962"** · `251×418` · margins L=26.50 R=26.50 T=24 B=314
+      - **"Frame 1618872393"** · `251×40` · margins L=0 R=0 T=0 B=378
+        - **"Frame 1984077293"** · `136×40` · margins L=0 R=115 T=0 B=0
+          - ↔ **8px** between "logo 2" → "VedaAI"
+          - **"logo 2"** · `40×40` · margins L=0 R=96 T=0 B=0
+            - **"background"** · `40×40` · margins L=0 R=0 T=0 B=0
+            - **"Group 5"** · `28×19.42` · margins L=6 R=6 T=11 B=9.58
+          - **"VedaAI"** · `88×20` · margins L=48 R=0 T=10 B=10
+      - **"Frame 18"** · `251×42` · margins L=0 R=0 T=96 B=280
+        - **"Frame 17"** · `251×42` · margins L=0 R=0 T=0 B=0
+          - ↔ **10px** between "Frame 1618872409" → "Create Assignment"
+          - **"Frame 1618872409"** · `18.32×17.32` · margins L=42.84 R=189.84 T=12.34 B=12.34
+          - **"Create Assignment"** · `137×28` · margins L=71.16 R=42.84 T=7 B=7
+      - **"Menu"** · `251×224` · margins L=0 R=0 T=194 B=0
+        - **"Dashboard"** · `254×40` · margins L=0 R=-3 T=0 B=184
+          - ↔ **8px** between ".Icon" → "Home"
+          - **".Icon"** · `20×20` · margins L=12 R=222 T=10 B=10
+          - **"Home"** · `202×22` · margins L=40 R=12 T=9 B=9
+        - **"Menu"** · `251×38` · margins L=0 R=0 T=48 B=138
+          - **"Settings"** · `251×38` · margins L=0 R=0 T=0 B=0
+            - **"My Groups"** · `199×22` · margins L=40 R=12 T=8 B=8
+        - **"Settings"** · `254×38` · margins L=0 R=-3 T=94 B=92
+          - ↔ **8px** between "icon_line/file-text" → "Assignments"
+          - **"icon_line/file-text"** · `20×20` · margins L=12 R=222 T=9 B=9
+          - **"Assignments"** · `202×22` · margins L=40 R=12 T=8 B=8
+        - **"Settings"** · `254×38` · margins L=0 R=-3 T=140 B=46
+          - ↔ **8px** between "Book" → "AI Teacher’s Toolkit"
+          - **"Book"** · `20×20` · margins L=12 R=222 T=9 B=9
+          - **"AI Teacher’s Toolkit"** · `202×22` · margins L=40 R=12 T=8 B=8
+        - **"Credit Report"** · `254×38` · margins L=0 R=-3 T=186 B=0
+          - ↔ **8px** between ".Icon" → "My Library"
+          - **".Icon"** · `20×20` · margins L=12 R=222 T=9 B=9
+          - **"My Library"** · `202×22` · margins L=40 R=12 T=8 B=8
+          - **"Frame 41"** · `37×20` · margins L=205 R=12 T=9 B=9
+            - **"32"** · `17×20` · margins L=10 R=10 T=0 B=0
+        - **"Settings"** · `251×38` · margins L=0 R=0 T=140 B=46
+          - ↔ **8px** between "icon_line/file-text_plus" → "Review"
+          - **"icon_line/file-text_plus"** · `20×20` · margins L=12 R=219 T=9 B=9
+          - **"Review"** · `199×22` · margins L=40 R=12 T=8 B=8
+        - **"Settings"** · `251×38` · margins L=0 R=0 T=186 B=0
+          - ↔ **8px** between "icon_line/Bar-chart_up" → "Analytics"
+          - **"icon_line/Bar-chart_up"** · `20×20` · margins L=12 R=219 T=9 B=9
+          - **"Analytics"** · `199×22` · margins L=40 R=12 T=8 B=8
+    - **"Frame 1984077460"** · `256×126` · margins L=24 R=24 T=606 B=24
+      - **"Settings"** · `256×38` · margins L=0 R=0 T=0 B=88
+        - ↔ **8px** between "icon_line/Setting" → "Settings"
+        - **"icon_line/Setting"** · `20×20` · margins L=12 R=224 T=9 B=9
+        - **"Settings"** · `204×22` · margins L=40 R=12 T=8 B=8
+      - **"Frame 39959"** · `256×80` · margins L=0 R=0 T=46 B=0
+        - **"Frame 39958"** · `232×56` · margins L=12 R=12 T=12 B=12
+          - ↔ **8px** between "Avatar" → "Content"
+          - **"Avatar"** · `59×56` · margins L=0 R=173 T=0 B=0
+          - **"Content"** · `165×44` · margins L=67 R=0 T=6 B=6
+            - **"Delhi Public School"** · `165×22` · margins L=0 R=0 T=0 B=22
+            - **"Bokaro Steel City"** · `165×22` · margins L=0 R=0 T=22 B=0
+  - **"Frame 1618872397"** · `1100×56` · margins L=327 R=13 T=12 B=712
+    - ↔ **10px** between "Frame 1984077293" → "Frame 1618872410"
+    - ↔ **10px** between "Frame 1618872410" → "Frame 1618872411"
+    - ↔ **10px** between "Frame 1618872411" → "Frame 1984077287"
+    - **"Frame 1984077293"** · `40×40` · margins L=24 R=1036 T=8 B=8
+      - **"Frame 1984077294"** · `40×40` · margins L=0 R=0 T=0 B=0
+        - **"icon_line/Arrow_Left"** · `24×24` · margins L=8 R=8 T=8 B=8
+    - **"Frame 1618872410"** · `801×20` · margins L=74 R=225 T=18 B=18
+      - ↔ **8px** between ".Icon" → "Assignment"
+      - **".Icon"** · `20×20` · margins L=0 R=781 T=0 B=0
+      - **"Assignment"** · `87×19` · margins L=28 R=686 T=0.50 B=0.50
+    - **"Frame 1618872411"** · `36×36` · margins L=885 R=179 T=10 B=10
+      - **".Icon"** · `24×24` · margins L=6 R=6 T=6 B=6
+      - **"Ellipse 9"** · `8×8` · margins L=27 R=1 T=1 B=27
+    - **"Frame 1984077287"** · `157×44` · margins L=931 R=12 T=6 B=6
+      - ↔ **8px** between "Frame 1618872412" → "Frame 1984077288"
+      - **"Frame 1618872412"** · `32×32` · margins L=12 R=113 T=6 B=6
+      - **"Frame 1984077288"** · `93×24` · margins L=52 R=12 T=10 B=10
+        - ↔ **4px** between "John Doe" → "Chevron down"
+        - **"John Doe"** · `65×19` · margins L=0 R=28 T=2.50 B=2.50
+        - **"Chevron down"** · `24×24` · margins L=69 R=0 T=0 B=0
+
+---
+
+## B. 0 State screen (Mobile) (`43:9862`)
+
+- **"0 State screen (Mobile)"** · `393×857`
+  - ↕ **595px** between "Address Bar iOS / X Chrome" → "Group 1321314519"
+  - **"Frame 1984077553"** · `373×657` · margins L=10 R=10 T=104 B=96
+    - **"Frame 1984077554"** · `373×338` · margins L=0 R=0 T=120.50 B=198.50
+      - **"Illustrations"** · `220×220` · margins L=76.50 R=76.50 T=0 B=118
+        - **"Illustration found"** · `209.89×176` · margins L=5.13 R=4.97 T=21.27 B=22.73
+          - ↔ **6.94px** between "Page" → "Cloud"
+          - **"Page"** · `91.33×113.69` · margins L=60.13 R=58.43 T=25.34 B=36.97
+            - **"Page"** · `91.33×113.69` · margins L=0 R=0 T=0 B=0
+            - **"Information"** · `73.33×88.73` · margins L=8.07 R=9.93 T=14.67 B=10.29
+              - **"Title"** · `36.67×7.19` · margins L=0 R=36.67 T=0 B=81.55
+              - **"Text"** · `73.33×7.19` · margins L=0 R=0 T=20.39 B=61.16
+              - **"Text"** · `73.33×7.19` · margins L=0 R=0 T=40.77 B=40.77
+              - **"Text"** · `73.33×7.19` · margins L=0 R=0 T=61.16 B=20.39
+              - **"Text"** · `73.33×7.19` · margins L=0 R=0 T=81.55 B=0
+          - **"Cloud"** · `51.49×29.62` · margins L=158.40 R=0 T=12.78 B=133.60
+            - **"Circle"** · `38.13×8.80` · margins L=6.60 R=6.76 T=10.69 B=10.13
+              - **"Rectangle 10"** · `23.47×8.80` · margins L=14.67 R=0 T=0 B=0
+          - **"Lens"** · `119.61×119.65` · margins L=84.78 R=5.50 T=52.48 B=3.87
+          - **"Doodles"** · `208.27×131.01` · margins L=0 R=1.63 T=23.15 B=21.83
+            - **"Ellipse 67"** · `8.80×8.80` · margins L=199.47 R=0 T=86.11 B=36.10
+      - **"Frame 1984077347"** · `373×106` · margins L=0 R=0 T=232 B=0
+        - **"No assignments yet"** · `181×28` · margins L=96 R=96 T=0 B=78
+        - **"Create your first assignment to start collecting and grad…"** · `373×66` · margins L=0 R=0 T=40 B=0
+    - **"Primary Button - Dark"** · `277×46` · margins L=48 R=48 T=490.50 B=120.50
+      - ↔ **4px** between "icon_line/Plus" → "Create Your First Assignment"
+      - **"icon_line/Plus"** · `20×20` · margins L=24 R=233 T=13 B=13
+        - **"Group 33489"** · `15×15` · margins L=2.50 R=2.50 T=2.50 B=2.50
+      - **"Create Your First Assignment"** · `205×22` · margins L=48 R=24 T=12 B=12
+  - **"Home Indicator"** · `393×34` · margins L=0 R=0 T=823 B=0
+    - **"Line"** · `135×5` · margins L=129 R=129 T=21 B=8
+  - **"Address Bar iOS / X Chrome"** · `393×105` · margins L=0 R=0 T=0 B=752
+    - **"Background"** · `393×105` · margins L=0 R=0 T=0 B=0
+      - **"Background"** · `393×105` · margins L=0 R=0 T=0 B=0
+      - **"iOS / Separator"** · `393×1` · margins L=0 R=0 T=104 B=0
+        - **"Line"** · `393×0` · margins L=0 R=0 T=1 B=0
+    - **"iOS / Status Bar / X / Default"** · `393×44` · margins L=0 R=0 T=0 B=61
+      - ↔ **213.86px** between "Action" → "Container"
+      - **"Action"** · `56.29×18` · margins L=20.85 R=315.86 T=19 B=7
+        - **"9:41"** · `54×18` · margins L=0 R=2.29 T=0 B=0
+      - **"Container"** · `68×14` · margins L=291 R=34 T=21 B=9
+        - **"􀛨"** · `29×20` · margins L=41 R=-2 T=-3 B=-3
+        - **"􀙇"** · `19×17` · margins L=21 R=28 T=-1 B=-2
+    - **"iOS / Chrome / Address Bar"** · `373×40` · margins L=10 R=10 T=54 B=11
+      - **"iOS / Chrome / Address"** · `173×19` · margins L=101 R=99 T=11 B=10
+        - **"web-to-figma.design"** · `158×19` · margins L=15 R=0 T=0 B=0
+  - **"Group 1321314519"** · `393×157` · margins L=0 R=0 T=700 B=0
+    - **"Rectangle 11"** · `393×57` · margins L=0 R=0 T=100 B=0
+    - **"Frame 1618872295"** · `373×146` · margins L=10 R=10 T=0 B=11
+      - **"Frame 1984077612"** · `373×48` · margins L=0 R=0 T=0 B=98
+        - **"Frame 1984077380"** · `48×48` · margins L=325 R=0 T=0 B=0
+          - **"icon_line/Plus"** · `20×20` · margins L=14 R=14 T=14 B=14
+            - **"Group 33489"** · `15×15` · margins L=2.50 R=2.50 T=2.50 B=2.50
+      - **"Frame 1984077613"** · `373×72` · margins L=0 R=0 T=61 B=13
+        - ↔ **39px** between "Frame 1984077234" → "Frame 1618872292"
+        - ↔ **39px** between "Frame 1618872292" → "Frame 1618872293"
+        - ↔ **39px** between "Frame 1618872293" → "Frame 1984077235"
+        - **"Frame 1984077234"** · `52×52` · margins L=24 R=297 T=10 B=10
+          - **"Frame 1984077232"** · `33×39` · margins L=9.50 R=9.50 T=6.50 B=6.50
+            - **"Frame 1618872292"** · `18×18` · margins L=7.50 R=7.50 T=0 B=21
+              - **"Frame 1618872290"** · `18×8.49` · margins L=0 R=0 T=0 B=9.51
+                - ↔ **1.02px** between "Rectangle 8" → "Rectangle 7"
+                - **"Rectangle 8"** · `8.49×8.49` · margins L=0 R=9.51 T=0 B=0
+                - **"Rectangle 7"** · `8.49×8.49` · margins L=9.51 R=0 T=0 B=0
+              - **"Frame 1618872291"** · `18×8.49` · margins L=0 R=0 T=9.51 B=0
+                - ↔ **1.02px** between "Rectangle 10" → "Rectangle 9"
+                - **"Rectangle 10"** · `8.49×8.49` · margins L=0 R=9.51 T=0 B=0
+                - **"Rectangle 9"** · `8.49×8.49` · margins L=9.51 R=0 T=0 B=0
+            - **"Home"** · `33×17` · margins L=0 R=0 T=22 B=0
+        - **"Frame 1618872292"** · `52×52` · margins L=115 R=206 T=10 B=10
+          - **"Frame 1984077233"** · `71×41` · margins L=-9.50 R=-9.50 T=5.50 B=5.50
+            - **"icon_filled/Calendar"** · `20×20` · margins L=25.50 R=25.50 T=0 B=21
+            - **"Assignments"** · `71×17` · margins L=0 R=0 T=24 B=0
+        - **"Frame 1618872293"** · `52×52` · margins L=206 R=115 T=10 B=10
+          - **"icon_filled/file-text_plus"** · `20×20` · margins L=16 R=16 T=5.50 B=26.50
+          - **"Library"** · `39×17` · margins L=6.50 R=6.50 T=29.50 B=5.50
+        - **"Frame 1984077235"** · `52×52` · margins L=297 R=24 T=10 B=10
+          - **"Frame 1618872409"** · `20×20` · margins L=16 R=16 T=5.50 B=26.50
+          - **"AI Toolkit"** · `49×17` · margins L=1.50 R=1.50 T=29.50 B=5.50
+  - **"Frame 1984077205"** · `393×81` · margins L=0 R=0 T=105 B=671
+    - **"Frame 1618872397"** · `373×56` · margins L=10 R=10 T=12.50 B=12.50
+      - ↔ **130px** between "Frame 1984077294" → "Frame 1984077614"
+      - **"Frame 1984077294"** · `99×28` · margins L=12 R=262 T=14 B=14
+        - ↔ **8px** between "Component 1" → "VedaAI"
+        - **"Component 1"** · `28×28` · margins L=0 R=71 T=0 B=0
+          - **"background"** · `28×28` · margins L=0 R=0 T=0 B=0
+        - **"VedaAI"** · `63×28` · margins L=36 R=0 T=0 B=0
+      - **"Frame 1984077614"** · `116×36` · margins L=241 R=16 T=10 B=10
+        - ↔ **12px** between "Frame 1618872411" → "Frame 1618872412"
+        - ↔ **12px** between "Frame 1618872412" → "menu"
+        - **"Frame 1618872411"** · `36×36` · margins L=0 R=80 T=0 B=0
+          - **".Icon"** · `24×24` · margins L=6 R=6 T=6 B=6
+          - **"Ellipse 9"** · `8×8` · margins L=27 R=1 T=1 B=27
+        - **"Frame 1618872412"** · `32×32` · margins L=48 R=36 T=2 B=2
+        - **"menu"** · `24×24` · margins L=92 R=0 T=6 B=6
+
+---
+
+## C. Filled State (Desktop) (`43:9429`)
+
+- **"Filled State(Desktop) "** · `1440×843`
+  - ↔ **11px** between "Side Bar" → "Frame 1618872397"
+  - **"Ellipse 16"** · `1113×428` · margins L=327 R=0 T=560 B=-145
+  - **"Frame 1984077326"** · `1100×822` · margins L=327 R=13 T=90 B=-69
+    - **"Frame 1984077332"** · `1100×50` · margins L=0 R=0 T=0 B=772
+      - **"Frame 1618872418"** · `333×50` · margins L=8 R=759 T=0 B=0
+        - ↔ **16px** between "Ellipse 10" → "Frame 1984077347"
+        - **"Ellipse 10"** · `12×12` · margins L=4 R=317 T=19 B=19
+        - **"Frame 1984077347"** · `301×50` · margins L=32 R=0 T=0 B=0
+          - **"Assignments"** · `121×28` · margins L=0 R=180 T=0 B=22
+          - **"Manage and create assignments for your classes."** · `301×20` · margins L=0 R=0 T=30 B=0
+    - **"Default"** · `1100×64` · margins L=0 R=0 T=62 B=696
+      - ↔ **611px** between "Frame 1984077342" → "Frame 1984077383"
+      - **"Frame 1984077342"** · `77×20` · margins L=16 R=1007 T=22 B=22
+        - **"Frame 1984077338"** · `77×20` · margins L=0 R=0 T=0 B=0
+          - **"Frame 1984077229"** · `77×20` · margins L=0 R=0 T=0 B=0
+            - ↔ **4px** between "icon_line/Filter" → "Filter By"
+            - **"icon_line/Filter"** · `20×20` · margins L=0 R=57 T=0 B=0
+            - **"Filter By"** · `53×20` · margins L=24 R=0 T=0 B=0
+      - **"Frame 1984077383"** · `380×44` · margins L=704 R=16 T=10 B=10
+        - **"Frame 1984077230"** · `380×44` · margins L=0 R=0 T=0 B=0
+          - **"Frame 1984077229"** · `157×20` · margins L=16 R=207 T=12 B=12
+            - ↔ **12px** between "icon_line/Search" → "Search Assignment"
+            - **"icon_line/Search"** · `20×20` · margins L=0 R=137 T=0 B=0
+              - **"Group 33509"** · `16.67×16.67` · margins L=1.67 R=1.67 T=1.67 B=1.67
+            - **"Search Assignment"** · `125×20` · margins L=32 R=0 T=0 B=0
+    - **"Frame 1984077329"** · `1100×162` · margins L=0 R=0 T=138 B=522
+      - ↔ **16px** between "Frame 1618872443" → "Frame 1984077588"
+      - **"Frame 1618872443"** · `542×162` · margins L=0 R=558 T=0 B=0
+        - ↔ **12px** between "Frame 1618872442" → "Frame 1984077588"
+        - **"Frame 1618872442"** · `542×162` · margins L=0 R=0 T=0 B=0
+          - **"Frame 1984077588"** · `542×162` · margins L=0 R=0 T=0 B=0
+            - **"Frame 40026"** · `542×162` · margins L=0 R=0 T=0 B=0
+              - **"Frame 1984077333"** · `494×114` · margins L=24 R=24 T=24 B=24
+                - **"Frame 1984077325"** · `494×29` · margins L=0 R=0 T=0 B=85
+                  - **"Frame 1618872420"** · `494×29` · margins L=0 R=0 T=0 B=0
+                    - ↔ **52px** between "Frame 1984077328" → "icon_line/More-vertical"
+                    - **"Frame 1984077328"** · `418×29` · margins L=0 R=76 T=0 B=0
+                      - **"Frame 40025"** · `199×29` · margins L=0 R=219 T=0 B=0
+                        - **"Quiz on Electricity"** · `199×29` · margins L=0 R=0 T=0 B=0
+                    - **"icon_line/More-vertical"** · `24×24` · margins L=470 R=0 T=2.50 B=2.50
+                - **"Frame 1984077326"** · `494×19` · margins L=0 R=0 T=95 B=0
+                  - **"Frame 1618872443"** · `494×19` · margins L=0 R=0 T=0 B=0
+                    - ↔ **195px** between "Frame 1618872421" → "Frame 1618872422"
+                    - **"Frame 1618872421"** · `183×19` · margins L=0 R=311 T=0 B=0
+                      - **"Assigned on : 20-06-2025"** · `183×19` · margins L=0 R=0 T=0 B=0
+                    - **"Frame 1618872422"** · `116×19` · margins L=378 R=0 T=0 B=0
+                      - **"Due : 21-06-2025"** · `116×19` · margins L=0 R=0 T=0 B=0
+          - **"Classes Dropdown"** · `140×84` · margins L=346 R=56 T=54 B=24
+            - **"Frame 1984077273"** · `124×32` · margins L=8 R=8 T=8 B=44
+              - **"View Assignment"** · `108×20` · margins L=8 R=8 T=6 B=6
+            - **"Frame 1984077264"** · `124×32` · margins L=8 R=8 T=44 B=8
+              - **"Delete"** · `40×20` · margins L=8 R=76 T=6 B=6
+        - **"Frame 1984077588"** · `542×162` · margins L=554 R=-554 T=0 B=0
+          - **"Frame 40026"** · `542×162` · margins L=0 R=0 T=0 B=0
+            - **"Frame 1984077333"** · `494×114` · margins L=24 R=24 T=24 B=24
+              - **"Frame 1984077325"** · `494×29` · margins L=0 R=0 T=0 B=85
+                - **"Frame 1618872420"** · `494×29` · margins L=0 R=0 T=0 B=0
+                  - ↔ **52px** between "Frame 1984077328" → "icon_line/More-vertical"
+                  - **"Frame 1984077328"** · `418×29` · margins L=0 R=76 T=0 B=0
+                    - **"Frame 40025"** · `199×29` · margins L=0 R=219 T=0 B=0
+                      - **"Quiz on Electricity"** · `199×29` · margins L=0 R=0 T=0 B=0
+                  - **"icon_line/More-vertical"** · `24×24` · margins L=470 R=0 T=2.50 B=2.50
+              - **"Frame 1984077326"** · `494×19` · margins L=0 R=0 T=95 B=0
+                - **"Frame 1618872443"** · `494×19` · margins L=0 R=0 T=0 B=0
+                  - ↔ **195px** between "Frame 1618872421" → "Frame 1618872422"
+                  - **"Frame 1618872421"** · `183×19` · margins L=0 R=311 T=0 B=0
+                    - **"Assigned on : 20-06-2025"** · `183×19` · margins L=0 R=0 T=0 B=0
+                  - **"Frame 1618872422"** · `116×19` · margins L=378 R=0 T=0 B=0
+                    - **"Due : 21-06-2025"** · `116×19` · margins L=0 R=0 T=0 B=0
+      - **"Frame 1984077588"** · `542×162` · margins L=558 R=0 T=0 B=0
+        - **"Frame 40026"** · `542×162` · margins L=0 R=0 T=0 B=0
+          - **"Frame 1984077333"** · `494×114` · margins L=24 R=24 T=24 B=24
+            - **"Frame 1984077325"** · `494×29` · margins L=0 R=0 T=0 B=85
+              - **"Frame 1618872420"** · `494×29` · margins L=0 R=0 T=0 B=0
+                - ↔ **52px** between "Frame 1984077328" → "icon_line/More-vertical"
+                - **"Frame 1984077328"** · `418×29` · margins L=0 R=76 T=0 B=0
+                  - **"Frame 40025"** · `199×29` · margins L=0 R=219 T=0 B=0
+                    - **"Quiz on Electricity"** · `199×29` · margins L=0 R=0 T=0 B=0
+                - **"icon_line/More-vertical"** · `24×24` · margins L=470 R=0 T=2.50 B=2.50
+            - **"Frame 1984077326"** · `494×19` · margins L=0 R=0 T=95 B=0
+              - **"Frame 1618872443"** · `494×19` · margins L=0 R=0 T=0 B=0
+                - ↔ **195px** between "Frame 1618872421" → "Frame 1618872422"
+                - **"Frame 1618872421"** · `183×19` · margins L=0 R=311 T=0 B=0
+                  - **"Assigned on : 20-06-2025"** · `183×19` · margins L=0 R=0 T=0 B=0
+                - **"Frame 1618872422"** · `116×19` · margins L=378 R=0 T=0 B=0
+                  - **"Due : 21-06-2025"** · `116×19` · margins L=0 R=0 T=0 B=0
+    - **"Frame 1984077333"** · `1100×162` · margins L=0 R=0 T=312 B=348
+      - ↔ **16px** between "Frame 1618872443" → "Frame 1984077588"
+      - **"Frame 1618872443"** · `542×162` · margins L=0 R=558 T=0 B=0
+        - ↔ **12px** between "Frame 1618872442" → "Frame 1984077588"
+        - **"Frame 1618872442"** · `542×162` · margins L=0 R=0 T=0 B=0
+          - **"Frame 1984077588"** · `542×162` · margins L=0 R=0 T=0 B=0
+            - **"Frame 40026"** · `542×162` · margins L=0 R=0 T=0 B=0
+              - **"Frame 1984077333"** · `494×114` · margins L=24 R=24 T=24 B=24
+                - **"Frame 1984077325"** · `494×29` · margins L=0 R=0 T=0 B=85
+                  - **"Frame 1618872420"** · `494×29` · margins L=0 R=0 T=0 B=0
+                    - ↔ **52px** between "Frame 1984077328" → "icon_line/More-vertical"
+                    - **"Frame 1984077328"** · `418×29` · margins L=0 R=76 T=0 B=0
+                      - **"Frame 40025"** · `199×29` · margins L=0 R=219 T=0 B=0
+                        - **"Quiz on Electricity"** · `199×29` · margins L=0 R=0 T=0 B=0
+                    - **"icon_line/More-vertical"** · `24×24` · margins L=470 R=0 T=2.50 B=2.50
+                - **"Frame 1984077326"** · `494×19` · margins L=0 R=0 T=95 B=0
+                  - **"Frame 1618872443"** · `494×19` · margins L=0 R=0 T=0 B=0
+                    - ↔ **195px** between "Frame 1618872421" → "Frame 1618872422"
+                    - **"Frame 1618872421"** · `183×19` · margins L=0 R=311 T=0 B=0
+                      - **"Assigned on : 20-06-2025"** · `183×19` · margins L=0 R=0 T=0 B=0
+                    - **"Frame 1618872422"** · `116×19` · margins L=378 R=0 T=0 B=0
+                      - **"Due : 21-06-2025"** · `116×19` · margins L=0 R=0 T=0 B=0
+        - **"Frame 1984077588"** · `542×162` · margins L=554 R=-554 T=0 B=0
+          - **"Frame 40026"** · `542×162` · margins L=0 R=0 T=0 B=0
+            - **"Frame 1984077333"** · `494×114` · margins L=24 R=24 T=24 B=24
+              - **"Frame 1984077325"** · `494×29` · margins L=0 R=0 T=0 B=85
+                - **"Frame 1618872420"** · `494×29` · margins L=0 R=0 T=0 B=0
+                  - ↔ **52px** between "Frame 1984077328" → "icon_line/More-vertical"
+                  - **"Frame 1984077328"** · `418×29` · margins L=0 R=76 T=0 B=0
+                    - **"Frame 40025"** · `199×29` · margins L=0 R=219 T=0 B=0
+                      - **"Quiz on Electricity"** · `199×29` · margins L=0 R=0 T=0 B=0
+                  - **"icon_line/More-vertical"** · `24×24` · margins L=470 R=0 T=2.50 B=2.50
+              - **"Frame 1984077326"** · `494×19` · margins L=0 R=0 T=95 B=0
+                - **"Frame 1618872443"** · `494×19` · margins L=0 R=0 T=0 B=0
+                  - ↔ **195px** between "Frame 1618872421" → "Frame 1618872422"
+                  - **"Frame 1618872421"** · `183×19` · margins L=0 R=311 T=0 B=0
+                    - **"Assigned on : 20-06-2025"** · `183×19` · margins L=0 R=0 T=0 B=0
+                  - **"Frame 1618872422"** · `116×19` · margins L=378 R=0 T=0 B=0
+                    - **"Due : 21-06-2025"** · `116×19` · margins L=0 R=0 T=0 B=0
+      - **"Frame 1984077588"** · `542×162` · margins L=558 R=0 T=0 B=0
+        - **"Frame 40026"** · `542×162` · margins L=0 R=0 T=0 B=0
+          - **"Frame 1984077333"** · `494×114` · margins L=24 R=24 T=24 B=24
+            - **"Frame 1984077325"** · `494×29` · margins L=0 R=0 T=0 B=85
+              - **"Frame 1618872420"** · `494×29` · margins L=0 R=0 T=0 B=0
+                - ↔ **52px** between "Frame 1984077328" → "icon_line/More-vertical"
+                - **"Frame 1984077328"** · `418×29` · margins L=0 R=76 T=0 B=0
+                  - **"Frame 40025"** · `199×29` · margins L=0 R=219 T=0 B=0
+                    - **"Quiz on Electricity"** · `199×29` · margins L=0 R=0 T=0 B=0
+                - **"icon_line/More-vertical"** · `24×24` · margins L=470 R=0 T=2.50 B=2.50
+            - **"Frame 1984077326"** · `494×19` · margins L=0 R=0 T=95 B=0
+              - **"Frame 1618872443"** · `494×19` · margins L=0 R=0 T=0 B=0
+                - ↔ **195px** between "Frame 1618872421" → "Frame 1618872422"
+                - **"Frame 1618872421"** · `183×19` · margins L=0 R=311 T=0 B=0
+                  - **"Assigned on : 20-06-2025"** · `183×19` · margins L=0 R=0 T=0 B=0
+                - **"Frame 1618872422"** · `116×19` · margins L=378 R=0 T=0 B=0
+                  - **"Due : 21-06-2025"** · `116×19` · margins L=0 R=0 T=0 B=0
+    - **"Frame 1984077334"** · `1100×162` · margins L=0 R=0 T=486 B=174
+      - ↔ **16px** between "Frame 1618872443" → "Frame 1984077588"
+      - **"Frame 1618872443"** · `542×162` · margins L=0 R=558 T=0 B=0
+        - ↔ **12px** between "Frame 1618872442" → "Frame 1984077588"
+        - **"Frame 1618872442"** · `542×162` · margins L=0 R=0 T=0 B=0
+          - **"Frame 1984077588"** · `542×162` · margins L=0 R=0 T=0 B=0
+            - **"Frame 40026"** · `542×162` · margins L=0 R=0 T=0 B=0
+              - **"Frame 1984077333"** · `494×114` · margins L=24 R=24 T=24 B=24
+                - **"Frame 1984077325"** · `494×29` · margins L=0 R=0 T=0 B=85
+                  - **"Frame 1618872420"** · `494×29` · margins L=0 R=0 T=0 B=0
+                    - ↔ **52px** between "Frame 1984077328" → "icon_line/More-vertical"
+                    - **"Frame 1984077328"** · `418×29` · margins L=0 R=76 T=0 B=0
+                      - **"Frame 40025"** · `199×29` · margins L=0 R=219 T=0 B=0
+                        - **"Quiz on Electricity"** · `199×29` · margins L=0 R=0 T=0 B=0
+                    - **"icon_line/More-vertical"** · `24×24` · margins L=470 R=0 T=2.50 B=2.50
+                - **"Frame 1984077326"** · `494×19` · margins L=0 R=0 T=95 B=0
+                  - **"Frame 1618872443"** · `494×19` · margins L=0 R=0 T=0 B=0
+                    - ↔ **195px** between "Frame 1618872421" → "Frame 1618872422"
+                    - **"Frame 1618872421"** · `183×19` · margins L=0 R=311 T=0 B=0
+                      - **"Assigned on : 20-06-2025"** · `183×19` · margins L=0 R=0 T=0 B=0
+                    - **"Frame 1618872422"** · `116×19` · margins L=378 R=0 T=0 B=0
+                      - **"Due : 21-06-2025"** · `116×19` · margins L=0 R=0 T=0 B=0
+        - **"Frame 1984077588"** · `542×162` · margins L=554 R=-554 T=0 B=0
+          - **"Frame 40026"** · `542×162` · margins L=0 R=0 T=0 B=0
+            - **"Frame 1984077333"** · `494×114` · margins L=24 R=24 T=24 B=24
+              - **"Frame 1984077325"** · `494×29` · margins L=0 R=0 T=0 B=85
+                - **"Frame 1618872420"** · `494×29` · margins L=0 R=0 T=0 B=0
+                  - ↔ **52px** between "Frame 1984077328" → "icon_line/More-vertical"
+                  - **"Frame 1984077328"** · `418×29` · margins L=0 R=76 T=0 B=0
+                    - **"Frame 40025"** · `199×29` · margins L=0 R=219 T=0 B=0
+                      - **"Quiz on Electricity"** · `199×29` · margins L=0 R=0 T=0 B=0
+                  - **"icon_line/More-vertical"** · `24×24` · margins L=470 R=0 T=2.50 B=2.50
+              - **"Frame 1984077326"** · `494×19` · margins L=0 R=0 T=95 B=0
+                - **"Frame 1618872443"** · `494×19` · margins L=0 R=0 T=0 B=0
+                  - ↔ **195px** between "Frame 1618872421" → "Frame 1618872422"
+                  - **"Frame 1618872421"** · `183×19` · margins L=0 R=311 T=0 B=0
+                    - **"Assigned on : 20-06-2025"** · `183×19` · margins L=0 R=0 T=0 B=0
+                  - **"Frame 1618872422"** · `116×19` · margins L=378 R=0 T=0 B=0
+                    - **"Due : 21-06-2025"** · `116×19` · margins L=0 R=0 T=0 B=0
+      - **"Frame 1984077588"** · `542×162` · margins L=558 R=0 T=0 B=0
+        - **"Frame 40026"** · `542×162` · margins L=0 R=0 T=0 B=0
+          - **"Frame 1984077333"** · `494×114` · margins L=24 R=24 T=24 B=24
+            - **"Frame 1984077325"** · `494×29` · margins L=0 R=0 T=0 B=85
+              - **"Frame 1618872420"** · `494×29` · margins L=0 R=0 T=0 B=0
+                - ↔ **52px** between "Frame 1984077328" → "icon_line/More-vertical"
+                - **"Frame 1984077328"** · `418×29` · margins L=0 R=76 T=0 B=0
+                  - **"Frame 40025"** · `199×29` · margins L=0 R=219 T=0 B=0
+                    - **"Quiz on Electricity"** · `199×29` · margins L=0 R=0 T=0 B=0
+                - **"icon_line/More-vertical"** · `24×24` · margins L=470 R=0 T=2.50 B=2.50
+            - **"Frame 1984077326"** · `494×19` · margins L=0 R=0 T=95 B=0
+              - **"Frame 1618872443"** · `494×19` · margins L=0 R=0 T=0 B=0
+                - ↔ **195px** between "Frame 1618872421" → "Frame 1618872422"
+                - **"Frame 1618872421"** · `183×19` · margins L=0 R=311 T=0 B=0
+                  - **"Assigned on : 20-06-2025"** · `183×19` · margins L=0 R=0 T=0 B=0
+                - **"Frame 1618872422"** · `116×19` · margins L=378 R=0 T=0 B=0
+                  - **"Due : 21-06-2025"** · `116×19` · margins L=0 R=0 T=0 B=0
+    - **"Frame 1984077335"** · `1100×162` · margins L=0 R=0 T=660 B=0
+      - ↔ **16px** between "Frame 1618872443" → "Frame 1984077588"
+      - **"Frame 1618872443"** · `542×162` · margins L=0 R=558 T=0 B=0
+        - ↔ **12px** between "Frame 1618872442" → "Frame 1984077588"
+        - **"Frame 1618872442"** · `542×162` · margins L=0 R=0 T=0 B=0
+          - **"Frame 1984077588"** · `542×162` · margins L=0 R=0 T=0 B=0
+            - **"Frame 40026"** · `542×162` · margins L=0 R=0 T=0 B=0
+              - **"Frame 1984077333"** · `494×114` · margins L=24 R=24 T=24 B=24
+                - **"Frame 1984077325"** · `494×29` · margins L=0 R=0 T=0 B=85
+                  - **"Frame 1618872420"** · `494×29` · margins L=0 R=0 T=0 B=0
+                    - ↔ **52px** between "Frame 1984077328" → "icon_line/More-vertical"
+                    - **"Frame 1984077328"** · `418×29` · margins L=0 R=76 T=0 B=0
+                      - **"Frame 40025"** · `199×29` · margins L=0 R=219 T=0 B=0
+                        - **"Quiz on Electricity"** · `199×29` · margins L=0 R=0 T=0 B=0
+                    - **"icon_line/More-vertical"** · `24×24` · margins L=470 R=0 T=2.50 B=2.50
+                - **"Frame 1984077326"** · `494×19` · margins L=0 R=0 T=95 B=0
+                  - **"Frame 1618872443"** · `494×19` · margins L=0 R=0 T=0 B=0
+                    - ↔ **195px** between "Frame 1618872421" → "Frame 1618872422"
+                    - **"Frame 1618872421"** · `183×19` · margins L=0 R=311 T=0 B=0
+                      - **"Assigned on : 20-06-2025"** · `183×19` · margins L=0 R=0 T=0 B=0
+                    - **"Frame 1618872422"** · `116×19` · margins L=378 R=0 T=0 B=0
+                      - **"Due : 21-06-2025"** · `116×19` · margins L=0 R=0 T=0 B=0
+        - **"Frame 1984077588"** · `542×162` · margins L=554 R=-554 T=0 B=0
+          - **"Frame 40026"** · `542×162` · margins L=0 R=0 T=0 B=0
+            - **"Frame 1984077333"** · `494×114` · margins L=24 R=24 T=24 B=24
+              - **"Frame 1984077325"** · `494×29` · margins L=0 R=0 T=0 B=85
+                - **"Frame 1618872420"** · `494×29` · margins L=0 R=0 T=0 B=0
+                  - ↔ **52px** between "Frame 1984077328" → "icon_line/More-vertical"
+                  - **"Frame 1984077328"** · `418×29` · margins L=0 R=76 T=0 B=0
+                    - **"Frame 40025"** · `199×29` · margins L=0 R=219 T=0 B=0
+                      - **"Quiz on Electricity"** · `199×29` · margins L=0 R=0 T=0 B=0
+                  - **"icon_line/More-vertical"** · `24×24` · margins L=470 R=0 T=2.50 B=2.50
+              - **"Frame 1984077326"** · `494×19` · margins L=0 R=0 T=95 B=0
+                - **"Frame 1618872443"** · `494×19` · margins L=0 R=0 T=0 B=0
+                  - ↔ **195px** between "Frame 1618872421" → "Frame 1618872422"
+                  - **"Frame 1618872421"** · `183×19` · margins L=0 R=311 T=0 B=0
+                    - **"Assigned on : 20-06-2025"** · `183×19` · margins L=0 R=0 T=0 B=0
+                  - **"Frame 1618872422"** · `116×19` · margins L=378 R=0 T=0 B=0
+                    - **"Due : 21-06-2025"** · `116×19` · margins L=0 R=0 T=0 B=0
+      - **"Frame 1984077588"** · `542×162` · margins L=558 R=0 T=0 B=0
+        - **"Frame 40026"** · `542×162` · margins L=0 R=0 T=0 B=0
+          - **"Frame 1984077333"** · `494×114` · margins L=24 R=24 T=24 B=24
+            - **"Frame 1984077325"** · `494×29` · margins L=0 R=0 T=0 B=85
+              - **"Frame 1618872420"** · `494×29` · margins L=0 R=0 T=0 B=0
+                - ↔ **52px** between "Frame 1984077328" → "icon_line/More-vertical"
+                - **"Frame 1984077328"** · `418×29` · margins L=0 R=76 T=0 B=0
+                  - **"Frame 40025"** · `199×29` · margins L=0 R=219 T=0 B=0
+                    - **"Quiz on Electricity"** · `199×29` · margins L=0 R=0 T=0 B=0
+                - **"icon_line/More-vertical"** · `24×24` · margins L=470 R=0 T=2.50 B=2.50
+            - **"Frame 1984077326"** · `494×19` · margins L=0 R=0 T=95 B=0
+              - **"Frame 1618872443"** · `494×19` · margins L=0 R=0 T=0 B=0
+                - ↔ **195px** between "Frame 1618872421" → "Frame 1618872422"
+                - **"Frame 1618872421"** · `183×19` · margins L=0 R=311 T=0 B=0
+                  - **"Assigned on : 20-06-2025"** · `183×19` · margins L=0 R=0 T=0 B=0
+                - **"Frame 1618872422"** · `116×19` · margins L=378 R=0 T=0 B=0
+                  - **"Due : 21-06-2025"** · `116×19` · margins L=0 R=0 T=0 B=0
+  - **"Side Bar"** · `304×820` · margins L=12 R=1124 T=12 B=11
+    - **"Frame 39962"** · `251×418` · margins L=26.50 R=26.50 T=24 B=378
+      - **"Frame 1618872393"** · `251×40` · margins L=0 R=0 T=0 B=378
+        - **"Frame 1984077293"** · `136×40` · margins L=0 R=115 T=0 B=0
+          - ↔ **8px** between "logo 2" → "VedaAI"
+          - **"logo 2"** · `40×40` · margins L=0 R=96 T=0 B=0
+            - **"background"** · `40×40` · margins L=0 R=0 T=0 B=0
+            - **"Group 5"** · `28×19.42` · margins L=6 R=6 T=11 B=9.58
+          - **"VedaAI"** · `88×20` · margins L=48 R=0 T=10 B=10
+      - **"Frame 18"** · `251×42` · margins L=0 R=0 T=96 B=280
+        - **"Frame 17"** · `251×42` · margins L=0 R=0 T=0 B=0
+          - ↔ **10px** between "Frame 1618872409" → "Create Assignment"
+          - **"Frame 1618872409"** · `18.32×17.32` · margins L=42.84 R=189.84 T=12.34 B=12.34
+          - **"Create Assignment"** · `137×28` · margins L=71.16 R=42.84 T=7 B=7
+      - **"Menu"** · `251×224` · margins L=0 R=0 T=194 B=0
+        - **"Dashboard"** · `254×40` · margins L=0 R=-3 T=0 B=184
+          - ↔ **8px** between ".Icon" → "Home"
+          - **".Icon"** · `20×20` · margins L=12 R=222 T=10 B=10
+          - **"Home"** · `202×22` · margins L=40 R=12 T=9 B=9
+        - **"Menu"** · `251×38` · margins L=0 R=0 T=48 B=138
+          - **"Settings"** · `251×38` · margins L=0 R=0 T=0 B=0
+            - **"My Groups"** · `199×22` · margins L=40 R=12 T=8 B=8
+        - **"Settings"** · `254×38` · margins L=0 R=-3 T=94 B=92
+          - ↔ **8px** between "icon_line/file-text" → "Assignments"
+          - ↔ **8px** between "Assignments" → "Frame 41"
+          - **"icon_line/file-text"** · `20×20` · margins L=12 R=222 T=9 B=9
+          - **"Assignments"** · `160×22` · margins L=40 R=54 T=8 B=8
+          - **"Frame 41"** · `34×20` · margins L=208 R=12 T=9 B=9
+            - **"10"** · `14×20` · margins L=10 R=10 T=0 B=0
+        - **"Settings"** · `254×38` · margins L=0 R=-3 T=140 B=46
+          - ↔ **8px** between "Book" → "AI Teacher’s Toolkit"
+          - **"Book"** · `20×20` · margins L=12 R=222 T=9 B=9
+          - **"AI Teacher’s Toolkit"** · `202×22` · margins L=40 R=12 T=8 B=8
+        - **"Credit Report"** · `254×38` · margins L=0 R=-3 T=186 B=0
+          - ↔ **8px** between ".Icon" → "My Library"
+          - **".Icon"** · `20×20` · margins L=12 R=222 T=9 B=9
+          - **"My Library"** · `202×22` · margins L=40 R=12 T=8 B=8
+          - **"Frame 41"** · `37×20` · margins L=205 R=12 T=9 B=9
+            - **"32"** · `17×20` · margins L=10 R=10 T=0 B=0
+        - **"Settings"** · `251×38` · margins L=0 R=0 T=140 B=46
+          - ↔ **8px** between "icon_line/file-text_plus" → "Review"
+          - **"icon_line/file-text_plus"** · `20×20` · margins L=12 R=219 T=9 B=9
+          - **"Review"** · `199×22` · margins L=40 R=12 T=8 B=8
+        - **"Settings"** · `251×38` · margins L=0 R=0 T=186 B=0
+          - ↔ **8px** between "icon_line/Bar-chart_up" → "Analytics"
+          - **"icon_line/Bar-chart_up"** · `20×20` · margins L=12 R=219 T=9 B=9
+          - **"Analytics"** · `199×22` · margins L=40 R=12 T=8 B=8
+    - **"Frame 1984077460"** · `256×126` · margins L=24 R=24 T=670 B=24
+      - **"Settings"** · `256×38` · margins L=0 R=0 T=0 B=88
+        - ↔ **8px** between "icon_line/Setting" → "Settings"
+        - **"icon_line/Setting"** · `20×20` · margins L=12 R=224 T=9 B=9
+        - **"Settings"** · `204×22` · margins L=40 R=12 T=8 B=8
+      - **"Frame 39959"** · `256×80` · margins L=0 R=0 T=46 B=0
+        - **"Frame 39958"** · `232×56` · margins L=12 R=12 T=12 B=12
+          - ↔ **8px** between "Avatar" → "Content"
+          - **"Avatar"** · `59×56` · margins L=0 R=173 T=0 B=0
+          - **"Content"** · `165×44` · margins L=67 R=0 T=6 B=6
+            - **"Delhi Public School"** · `165×22` · margins L=0 R=0 T=0 B=22
+            - **"Bokaro Steel City"** · `165×22` · margins L=0 R=0 T=22 B=0
+  - **"Frame 1618872397"** · `1100×56` · margins L=327 R=13 T=12 B=775
+    - ↔ **10px** between "Frame 1984077293" → "Frame 1618872410"
+    - ↔ **10px** between "Frame 1618872410" → "Frame 1618872411"
+    - ↔ **10px** between "Frame 1618872411" → "Frame 1984077287"
+    - **"Frame 1984077293"** · `40×40` · margins L=24 R=1036 T=8 B=8
+      - **"Frame 1984077294"** · `40×40` · margins L=0 R=0 T=0 B=0
+        - **"icon_line/Arrow_Left"** · `24×24` · margins L=8 R=8 T=8 B=8
+    - **"Frame 1618872410"** · `801×20` · margins L=74 R=225 T=18 B=18
+      - ↔ **8px** between ".Icon" → "Assignment"
+      - **".Icon"** · `20×20` · margins L=0 R=781 T=0 B=0
+      - **"Assignment"** · `87×19` · margins L=28 R=686 T=0.50 B=0.50
+    - **"Frame 1618872411"** · `36×36` · margins L=885 R=179 T=10 B=10
+      - **".Icon"** · `24×24` · margins L=6 R=6 T=6 B=6
+      - **"Ellipse 9"** · `8×8` · margins L=27 R=1 T=1 B=27
+    - **"Frame 1984077287"** · `157×44` · margins L=931 R=12 T=6 B=6
+      - ↔ **8px** between "Frame 1618872412" → "Frame 1984077288"
+      - **"Frame 1618872412"** · `32×32` · margins L=12 R=113 T=6 B=6
+      - **"Frame 1984077288"** · `93×24` · margins L=52 R=12 T=10 B=10
+        - ↔ **4px** between "John Doe" → "Chevron down"
+        - **"John Doe"** · `65×19` · margins L=0 R=28 T=2.50 B=2.50
+        - **"Chevron down"** · `24×24` · margins L=69 R=0 T=0 B=0
+  - **"Frame 1618872447"** · `1125×73` · margins L=315 R=0 T=770 B=0
+    - **"Primary Button - Dark"** · `208×46` · margins L=458.50 R=458.50 T=13.50 B=13.50
+      - ↔ **4px** between "icon_line/Plus" → "Create Assignment"
+      - **"icon_line/Plus"** · `20×20` · margins L=24 R=164 T=13 B=13
+        - **"Group 33489"** · `15×15` · margins L=2.50 R=2.50 T=2.50 B=2.50
+      - **"Create Assignment"** · `136×22` · margins L=48 R=24 T=12 B=12
+
+---
+
+## D. Filled State (Mobile) (`43:10200`)
+
+- **"Filled State(Mobile) "** · `393×1125`
+  - ↕ **863px** between "Address Bar iOS / X Chrome" → "Group 1321314519"
+  - **"Frame 1984077582"** · `373×816` · margins L=10 R=10 T=190 B=119
+    - **"Frame 1984077583"** · `373×48` · margins L=0 R=0 T=0 B=768
+      - **"Frame 1984077380"** · `48×48` · margins L=0 R=325 T=0 B=0
+        - **"Arrow left"** · `24×24` · margins L=12 R=12 T=12 B=12
+      - **"Frame 1618872418"** · `373×22` · margins L=0 R=0 T=13 B=13
+        - **"Assignments"** · `97×22` · margins L=138 R=138 T=0 B=0
+    - **"Frame 1984077577"** · `373×744` · margins L=0 R=0 T=72 B=0
+      - **"Default"** · `373×64` · margins L=0 R=0 T=0 B=680
+        - ↔ **58px** between "Frame 1984077338" → "Frame 1984077230"
+        - **"Frame 1984077338"** · `55×20` · margins L=16 R=302 T=22 B=22
+          - **"Frame 1984077229"** · `55×20` · margins L=0 R=0 T=0 B=0
+            - ↔ **4px** between "icon_line/Filter" → "Filter"
+            - **"icon_line/Filter"** · `20×20` · margins L=0 R=35 T=0 B=0
+            - **"Filter"** · `31×20` · margins L=24 R=0 T=0 B=0
+        - **"Frame 1984077230"** · `228×44` · margins L=129 R=16 T=10 B=10
+          - **"Frame 1984077229"** · `115×20` · margins L=16 R=97 T=12 B=12
+            - ↔ **12px** between "icon_line/Search" → "Search Name"
+            - **"icon_line/Search"** · `20×20` · margins L=0 R=95 T=0 B=0
+              - **"Group 33509"** · `16.67×16.67` · margins L=1.67 R=1.67 T=1.67 B=1.67
+            - **"Search Name"** · `83×20` · margins L=32 R=0 T=0 B=0
+      - **"Frame 1984077343"** · `373×116` · margins L=0 R=0 T=84 B=544
+        - **"Frame 40026"** · `373×116` · margins L=0 R=0 T=0 B=0
+          - **"Frame 1984077333"** · `333×76` · margins L=20 R=20 T=20 B=20
+            - **"Frame 1984077325"** · `333×25` · margins L=0 R=0 T=0 B=51
+              - **"Frame 1618872420"** · `333×25` · margins L=0 R=0 T=0 B=0
+                - ↔ **162px** between "Frame 1984077328" → "icon_line/More-vertical"
+                - **"Frame 1984077328"** · `147×25` · margins L=0 R=186 T=0 B=0
+                  - **"Frame 40025"** · `147×25` · margins L=0 R=0 T=0 B=0
+                    - **"Quiz on Electricity"** · `147×25` · margins L=0 R=0 T=0 B=0
+                - **"icon_line/More-vertical"** · `24×24` · margins L=309 R=0 T=0.50 B=0.50
+            - **"Frame 1618872443"** · `182×19` · margins L=0 R=151 T=57 B=0
+              - ↔ **10px** between "Frame 1618872421" → "Frame 1618872422"
+              - **"Frame 1618872421"** · `183×19` · margins L=0 R=-1 T=0 B=0
+                - **"Assigned on : 20-06-2025"** · `183×19` · margins L=0 R=0 T=0 B=0
+              - **"Frame 1618872422"** · `116×19` · margins L=193 R=-127 T=0 B=0
+                - **"Due : 21-06-2025"** · `116×19` · margins L=0 R=0 T=0 B=0
+      - **"Frame 1984077344"** · `373×116` · margins L=0 R=0 T=220 B=408
+        - **"Frame 40026"** · `373×116` · margins L=0 R=0 T=0 B=0
+          - **"Frame 1984077333"** · `333×76` · margins L=20 R=20 T=20 B=20
+            - **"Frame 1984077325"** · `333×25` · margins L=0 R=0 T=0 B=51
+              - **"Frame 1618872420"** · `333×25` · margins L=0 R=0 T=0 B=0
+                - ↔ **162px** between "Frame 1984077328" → "icon_line/More-vertical"
+                - **"Frame 1984077328"** · `147×25` · margins L=0 R=186 T=0 B=0
+                  - **"Frame 40025"** · `147×25` · margins L=0 R=0 T=0 B=0
+                    - **"Quiz on Electricity"** · `147×25` · margins L=0 R=0 T=0 B=0
+                - **"icon_line/More-vertical"** · `24×24` · margins L=309 R=0 T=0.50 B=0.50
+            - **"Frame 1618872443"** · `182×19` · margins L=0 R=151 T=57 B=0
+              - ↔ **10px** between "Frame 1618872421" → "Frame 1618872422"
+              - **"Frame 1618872421"** · `183×19` · margins L=0 R=-1 T=0 B=0
+                - **"Assigned on : 20-06-2025"** · `183×19` · margins L=0 R=0 T=0 B=0
+              - **"Frame 1618872422"** · `116×19` · margins L=193 R=-127 T=0 B=0
+                - **"Due : 21-06-2025"** · `116×19` · margins L=0 R=0 T=0 B=0
+      - **"Frame 1984077345"** · `373×116` · margins L=0 R=0 T=356 B=272
+        - **"Frame 40026"** · `373×116` · margins L=0 R=0 T=0 B=0
+          - **"Frame 1984077333"** · `333×76` · margins L=20 R=20 T=20 B=20
+            - **"Frame 1984077325"** · `333×25` · margins L=0 R=0 T=0 B=51
+              - **"Frame 1618872420"** · `333×25` · margins L=0 R=0 T=0 B=0
+                - ↔ **162px** between "Frame 1984077328" → "icon_line/More-vertical"
+                - **"Frame 1984077328"** · `147×25` · margins L=0 R=186 T=0 B=0
+                  - **"Frame 40025"** · `147×25` · margins L=0 R=0 T=0 B=0
+                    - **"Quiz on Electricity"** · `147×25` · margins L=0 R=0 T=0 B=0
+                - **"icon_line/More-vertical"** · `24×24` · margins L=309 R=0 T=0.50 B=0.50
+            - **"Frame 1618872443"** · `182×19` · margins L=0 R=151 T=57 B=0
+              - ↔ **10px** between "Frame 1618872421" → "Frame 1618872422"
+              - **"Frame 1618872421"** · `183×19` · margins L=0 R=-1 T=0 B=0
+                - **"Assigned on : 20-06-2025"** · `183×19` · margins L=0 R=0 T=0 B=0
+              - **"Frame 1618872422"** · `116×19` · margins L=193 R=-127 T=0 B=0
+                - **"Due : 21-06-2025"** · `116×19` · margins L=0 R=0 T=0 B=0
+      - **"Frame 1984077346"** · `373×116` · margins L=0 R=0 T=492 B=136
+        - **"Frame 40026"** · `373×116` · margins L=0 R=0 T=0 B=0
+          - **"Frame 1984077333"** · `333×76` · margins L=20 R=20 T=20 B=20
+            - **"Frame 1984077325"** · `333×25` · margins L=0 R=0 T=0 B=51
+              - **"Frame 1618872420"** · `333×25` · margins L=0 R=0 T=0 B=0
+                - ↔ **162px** between "Frame 1984077328" → "icon_line/More-vertical"
+                - **"Frame 1984077328"** · `147×25` · margins L=0 R=186 T=0 B=0
+                  - **"Frame 40025"** · `147×25` · margins L=0 R=0 T=0 B=0
+                    - **"Quiz on Electricity"** · `147×25` · margins L=0 R=0 T=0 B=0
+                - **"icon_line/More-vertical"** · `24×24` · margins L=309 R=0 T=0.50 B=0.50
+            - **"Frame 1618872443"** · `182×19` · margins L=0 R=151 T=57 B=0
+              - ↔ **10px** between "Frame 1618872421" → "Frame 1618872422"
+              - **"Frame 1618872421"** · `183×19` · margins L=0 R=-1 T=0 B=0
+                - **"Assigned on : 20-06-2025"** · `183×19` · margins L=0 R=0 T=0 B=0
+              - **"Frame 1618872422"** · `116×19` · margins L=193 R=-127 T=0 B=0
+                - **"Due : 21-06-2025"** · `116×19` · margins L=0 R=0 T=0 B=0
+      - **"Frame 1984077347"** · `373×116` · margins L=0 R=0 T=628 B=0
+        - **"Frame 40026"** · `373×116` · margins L=0 R=0 T=0 B=0
+          - **"Frame 1984077333"** · `333×76` · margins L=20 R=20 T=20 B=20
+            - **"Frame 1984077325"** · `333×25` · margins L=0 R=0 T=0 B=51
+              - **"Frame 1618872420"** · `333×25` · margins L=0 R=0 T=0 B=0
+                - ↔ **162px** between "Frame 1984077328" → "icon_line/More-vertical"
+                - **"Frame 1984077328"** · `147×25` · margins L=0 R=186 T=0 B=0
+                  - **"Frame 40025"** · `147×25` · margins L=0 R=0 T=0 B=0
+                    - **"Quiz on Electricity"** · `147×25` · margins L=0 R=0 T=0 B=0
+                - **"icon_line/More-vertical"** · `24×24` · margins L=309 R=0 T=0.50 B=0.50
+            - **"Frame 1618872443"** · `182×19` · margins L=0 R=151 T=57 B=0
+              - ↔ **10px** between "Frame 1618872421" → "Frame 1618872422"
+              - **"Frame 1618872421"** · `183×19` · margins L=0 R=-1 T=0 B=0
+                - **"Assigned on : 20-06-2025"** · `183×19` · margins L=0 R=0 T=0 B=0
+              - **"Frame 1618872422"** · `116×19` · margins L=193 R=-127 T=0 B=0
+                - **"Due : 21-06-2025"** · `116×19` · margins L=0 R=0 T=0 B=0
+  - **"Home Indicator"** · `393×34` · margins L=0 R=0 T=1091 B=0
+    - **"Line"** · `135×5` · margins L=129 R=129 T=21 B=8
+  - **"Address Bar iOS / X Chrome"** · `393×105` · margins L=0 R=0 T=0 B=1020
+    - **"Background"** · `393×105` · margins L=0 R=0 T=0 B=0
+      - **"Background"** · `393×105` · margins L=0 R=0 T=0 B=0
+      - **"iOS / Separator"** · `393×1` · margins L=0 R=0 T=104 B=0
+        - **"Line"** · `393×0` · margins L=0 R=0 T=1 B=0
+    - **"iOS / Status Bar / X / Default"** · `393×44` · margins L=0 R=0 T=0 B=61
+      - ↔ **213.86px** between "Action" → "Container"
+      - **"Action"** · `56.29×18` · margins L=20.85 R=315.86 T=19 B=7
+        - **"9:41"** · `54×18` · margins L=0 R=2.29 T=0 B=0
+      - **"Container"** · `68×14` · margins L=291 R=34 T=21 B=9
+        - **"􀛨"** · `29×20` · margins L=41 R=-2 T=-3 B=-3
+        - **"􀙇"** · `19×17` · margins L=21 R=28 T=-1 B=-2
+    - **"iOS / Chrome / Address Bar"** · `373×40` · margins L=10 R=10 T=54 B=11
+      - **"bar-input"** · `373×40` · margins L=0 R=0 T=0 B=0
+      - **"iOS / Chrome / Address"** · `173×19` · margins L=101 R=99 T=11 B=10
+        - **"web-to-figma.design"** · `158×19` · margins L=15 R=0 T=0 B=0
+  - **"Group 1321314519"** · `393×157` · margins L=0 R=0 T=968 B=0
+    - **"Rectangle 11"** · `393×57` · margins L=0 R=0 T=100 B=0
+    - **"Frame 1618872295"** · `373×146` · margins L=10 R=10 T=0 B=11
+      - **"Frame 1984077612"** · `373×48` · margins L=0 R=0 T=0 B=98
+        - **"Frame 1984077380"** · `48×48` · margins L=325 R=0 T=0 B=0
+          - **"icon_line/Plus"** · `20×20` · margins L=14 R=14 T=14 B=14
+            - **"Group 33489"** · `15×15` · margins L=2.50 R=2.50 T=2.50 B=2.50
+      - **"Frame 1984077613"** · `373×72` · margins L=0 R=0 T=61 B=13
+        - ↔ **39px** between "Frame 1984077234" → "Frame 1618872292"
+        - ↔ **39px** between "Frame 1618872292" → "Frame 1618872293"
+        - ↔ **39px** between "Frame 1618872293" → "Frame 1984077235"
+        - **"Frame 1984077234"** · `52×52` · margins L=24 R=297 T=10 B=10
+          - **"Frame 1984077232"** · `33×39` · margins L=9.50 R=9.50 T=6.50 B=6.50
+            - **"Frame 1618872292"** · `18×18` · margins L=7.50 R=7.50 T=0 B=21
+              - **"Frame 1618872290"** · `18×8.49` · margins L=0 R=0 T=0 B=9.51
+                - ↔ **1.02px** between "Rectangle 8" → "Rectangle 7"
+                - **"Rectangle 8"** · `8.49×8.49` · margins L=0 R=9.51 T=0 B=0
+                - **"Rectangle 7"** · `8.49×8.49` · margins L=9.51 R=0 T=0 B=0
+              - **"Frame 1618872291"** · `18×8.49` · margins L=0 R=0 T=9.51 B=0
+                - ↔ **1.02px** between "Rectangle 10" → "Rectangle 9"
+                - **"Rectangle 10"** · `8.49×8.49` · margins L=0 R=9.51 T=0 B=0
+                - **"Rectangle 9"** · `8.49×8.49` · margins L=9.51 R=0 T=0 B=0
+            - **"Home"** · `33×17` · margins L=0 R=0 T=22 B=0
+        - **"Frame 1618872292"** · `52×52` · margins L=115 R=206 T=10 B=10
+          - **"Frame 1984077233"** · `71×41` · margins L=-9.50 R=-9.50 T=5.50 B=5.50
+            - **"icon_filled/Calendar"** · `20×20` · margins L=25.50 R=25.50 T=0 B=21
+            - **"Assignments"** · `71×17` · margins L=0 R=0 T=24 B=0
+        - **"Frame 1618872293"** · `52×52` · margins L=206 R=115 T=10 B=10
+          - **"icon_filled/file-text_plus"** · `20×20` · margins L=16 R=16 T=5.50 B=26.50
+          - **"Library"** · `39×17` · margins L=6.50 R=6.50 T=29.50 B=5.50
+        - **"Frame 1984077235"** · `52×52` · margins L=297 R=24 T=10 B=10
+          - **"Frame 1618872409"** · `20×20` · margins L=16 R=16 T=5.50 B=26.50
+          - **"AI Toolkit"** · `49×17` · margins L=1.50 R=1.50 T=29.50 B=5.50
+  - **"Frame 1984077205"** · `393×81` · margins L=0 R=0 T=105 B=939
+    - **"Frame 1618872397"** · `373×56` · margins L=10 R=10 T=12.50 B=12.50
+      - ↔ **130px** between "Frame 1984077294" → "Frame 1984077614"
+      - **"Frame 1984077294"** · `99×28` · margins L=12 R=262 T=14 B=14
+        - ↔ **8px** between "Component 1" → "VedaAI"
+        - **"Component 1"** · `28×28` · margins L=0 R=71 T=0 B=0
+          - **"background"** · `28×28` · margins L=0 R=0 T=0 B=0
+        - **"VedaAI"** · `63×28` · margins L=36 R=0 T=0 B=0
+      - **"Frame 1984077614"** · `116×36` · margins L=241 R=16 T=10 B=10
+        - ↔ **12px** between "Frame 1618872411" → "Frame 1618872412"
+        - ↔ **12px** between "Frame 1618872412" → "menu"
+        - **"Frame 1618872411"** · `36×36` · margins L=0 R=80 T=0 B=0
+          - **".Icon"** · `24×24` · margins L=6 R=6 T=6 B=6
+          - **"Ellipse 9"** · `8×8` · margins L=27 R=1 T=1 B=27
+        - **"Frame 1618872412"** · `32×32` · margins L=48 R=36 T=2 B=2
+        - **"menu"** · `24×24` · margins L=92 R=0 T=6 B=6
+
+---
+
+## E. Upload Material – Selector (Desktop) (`43:9259`)
+
+- **"Upload Material - Selector(Desktop)"** · `1440×1340`
+  - ↔ **11px** between "Side Bar" → "Frame 1618872397"
+  - **"Ellipse 16"** · `1113×428` · margins L=327 R=0 T=1167 B=-255
+  - **"Frame 1984077325"** · `1103×1262` · margins L=327 R=10 T=78 B=0
+    - **"Frame 1984077332"** · `1103×66` · margins L=0 R=0 T=0 B=1196
+      - **"Frame 1618872418"** · `293×50` · margins L=8 R=802 T=8 B=8
+        - ↔ **16px** between "Ellipse 10" → "Frame 1984077347"
+        - **"Ellipse 10"** · `12×12` · margins L=4 R=277 T=19 B=19
+        - **"Frame 1984077347"** · `261×50` · margins L=32 R=0 T=0 B=0
+          - **"Create Assignment"** · `174×28` · margins L=0 R=87 T=0 B=22
+          - **"Set up a new assignment for your students"** · `261×20` · margins L=0 R=0 T=30 B=0
+    - **"Frame 1984077364"** · `1103×0` · margins L=0 R=0 T=98 B=1164
+      - **"Frame 1984077355"** · `815×0` · margins L=144 R=144 T=0 B=0
+        - ↔ **12px** between "Frame 1984077353" → "Frame 1984077354"
+        - **"Frame 1984077353"** · `401.50×0` · margins L=0 R=413.50 T=0 B=0
+        - **"Frame 1984077354"** · `401.50×0` · margins L=413.50 R=0 T=0 B=0
+    - **"Frame 1984077359"** · `810×1010` · margins L=146.50 R=146.50 T=130 B=122
+      - **"Frame 1984077347"** · `251×50` · margins L=32 R=527 T=32 B=928
+        - **"Assignment Details"** · `176×28` · margins L=0 R=75 T=0 B=22
+        - **"Basic information about your assignment"** · `251×20` · margins L=0 R=0 T=30 B=0
+      - **"Frame 1984077364"** · `746×864` · margins L=32 R=32 T=114 B=32
+        - **"Frame 1984077301"** · `746×236` · margins L=0 R=0 T=0 B=628
+          - **"Frame 1618872469"** · `746×202` · margins L=0 R=0 T=0 B=34
+            - **"Frame 1618872514"** · `40×40` · margins L=353 R=353 T=24 B=138
+              - **"Upload cloud"** · `24×24` · margins L=8 R=8 T=8 B=8
+            - **"Frame 1618872516"** · `682×46` · margins L=32 R=32 T=80 B=76
+              - **"Choose a file or drag & drop it here"** · `682×22` · margins L=0 R=0 T=0 B=24
+              - **"JPEG, PNG, upto 10MB"** · `682×20` · margins L=0 R=0 T=26 B=0
+            - **"Primary Button - White"** · `127×36` · margins L=309.50 R=309.50 T=142 B=24
+              - **"Browse Files"** · `79×20` · margins L=24 R=24 T=8 B=8
+              - **"icon_line/Arrow_Right"** · `16×16` · margins L=85 R=26 T=10 B=10
+          - **"Upload images of your preferred document/image"** · `746×22` · margins L=0 R=0 T=214 B=0
+        - **"Frame 1618872464"** · `746×74` · margins L=0 R=0 T=252 B=538
+          - **"Frame 1618872457"** · `746×74` · margins L=0 R=0 T=0 B=0
+            - **"Due Date"** · `746×22` · margins L=0 R=0 T=0 B=52
+            - **"Frame 1618872169"** · `746×44` · margins L=0 R=0 T=30 B=0
+              - ↔ **594px** between "DD-MM-YYYY" → "icon_line/Calendar_plus"
+              - **"DD-MM-YYYY"** · `96×22` · margins L=16 R=634 T=11 B=11
+              - **"icon_line/Calendar_plus"** · `24×24` · margins L=706 R=16 T=10 B=10
+        - **"Frame 1618872171"** · `746×374` · margins L=0 R=0 T=342 B=148
+          - **"Frame 1984077498"** · `746×314` · margins L=0 R=0 T=0 B=60
+            - ↔ **0px** between "Frame 1618872458" → "Frame 1984077499"
+            - **"Frame 1618872458"** · `471×314` · margins L=0 R=275 T=0 B=0
+              - **"Question Type"** · `471×22` · margins L=0 R=0 T=0 B=292
+              - **"Frame 1984077504"** · `471×44` · margins L=0 R=0 T=38 B=232
+                - ↔ **12px** between "Frame 1984077497" → "X"
+                - **"Frame 1984077497"** · `443×44` · margins L=0 R=28 T=0 B=0
+                  - **"Frame 1618872169"** · `443×44` · margins L=0 R=0 T=0 B=0
+                    - ↔ **211px** between "Multiple Choice Questions" → "Chevron down"
+                    - **"Multiple Choice Questions"** · `184×22` · margins L=16 R=243 T=11 B=11
+                    - **"Chevron down"** · `16×16` · margins L=411 R=16 T=14 B=14
+                - **"X"** · `16×16` · margins L=455 R=0 T=14 B=14
+              - **"Frame 1984077505"** · `471×44` · margins L=0 R=0 T=98 B=172
+                - ↔ **12px** between "Frame 1984077497" → "X"
+                - **"Frame 1984077497"** · `443×44` · margins L=0 R=28 T=0 B=0
+                  - **"Frame 1618872169"** · `443×44` · margins L=0 R=0 T=0 B=0
+                    - ↔ **280px** between "Short Questions" → "Chevron down"
+                    - **"Short Questions"** · `115×22` · margins L=16 R=312 T=11 B=11
+                    - **"Chevron down"** · `16×16` · margins L=411 R=16 T=14 B=14
+                - **"X"** · `16×16` · margins L=455 R=0 T=14 B=14
+              - **"Frame 1984077506"** · `471×44` · margins L=0 R=0 T=158 B=112
+                - ↔ **12px** between "Frame 1984077497" → "X"
+                - **"Frame 1984077497"** · `443×44` · margins L=0 R=28 T=0 B=0
+                  - **"Frame 1618872169"** · `443×44` · margins L=0 R=0 T=0 B=0
+                    - ↔ **163px** between "Diagram/Graph-Based Questions" → "Chevron down"
+                    - **"Diagram/Graph-Based Questions"** · `232×22` · margins L=16 R=195 T=11 B=11
+                    - **"Chevron down"** · `16×16` · margins L=411 R=16 T=14 B=14
+                - **"X"** · `16×16` · margins L=455 R=0 T=14 B=14
+              - **"Frame 1984077509"** · `471×44` · margins L=0 R=0 T=218 B=52
+                - ↔ **12px** between "Frame 1984077503" → "X"
+                - **"Frame 1984077503"** · `443×44` · margins L=0 R=28 T=0 B=0
+                  - **"Frame 1618872169"** · `443×44` · margins L=0 R=0 T=0 B=0
+                    - ↔ **251px** between "Numerical Problems" → "Chevron down"
+                    - **"Numerical Problems"** · `144×22` · margins L=16 R=283 T=11 B=11
+                    - **"Chevron down"** · `16×16` · margins L=411 R=16 T=14 B=14
+                - **"X"** · `16×16` · margins L=455 R=0 T=14 B=14
+              - **"Frame 1984077500"** · `164×36` · margins L=0 R=307 T=278 B=0
+                - ↔ **8px** between "Primary Button - White" → "Add Question Type"
+                - **"Primary Button - White"** · `36×36` · margins L=0 R=128 T=0 B=0
+                  - **"icon_line/Plus"** · `20×20` · margins L=8 R=8 T=8 B=8
+                    - **"Group 33489"** · `15×15` · margins L=2.50 R=2.50 T=2.50 B=2.50
+                - **"Add Question Type"** · `120×20` · margins L=44 R=0 T=8 B=8
+            - **"Frame 1984077499"** · `275×262` · margins L=471 R=0 T=0 B=52
+              - ↔ **16px** between "Frame 1618872459" → "Frame 1618872460"
+              - **"Frame 1618872459"** · `116×262` · margins L=43 R=116 T=0 B=0
+                - **"No. of Questions"** · `116×22` · margins L=0 R=0 T=0 B=240
+                - **"Frame 1618872169"** · `100×44` · margins L=8 R=8 T=38 B=180
+                  - ↔ **21px** between "icon_line/Minus" → "4"
+                  - ↔ **21px** between "4" → "Plus"
+                  - **"icon_line/Minus"** · `16×16` · margins L=8 R=76 T=14 B=14
+                  - **"4"** · `10×22` · margins L=45 R=45 T=11 B=11
+                  - **"Plus"** · `16×16` · margins L=76 R=8 T=14 B=14
+                - **"Frame 1618872169"** · `100×44` · margins L=8 R=8 T=98 B=120
+                  - ↔ **21px** between "icon_line/Minus" → "3"
+                  - ↔ **21px** between "3" → "Plus"
+                  - **"icon_line/Minus"** · `16×16` · margins L=8 R=76 T=14 B=14
+                  - **"3"** · `10×22` · margins L=45 R=45 T=11 B=11
+                  - **"Plus"** · `16×16` · margins L=76 R=8 T=14 B=14
+                - **"Frame 1618872169"** · `100×44` · margins L=8 R=8 T=158 B=60
+                  - ↔ **21px** between "icon_line/Minus" → "5"
+                  - ↔ **21px** between "5" → "Plus"
+                  - **"icon_line/Minus"** · `16×16` · margins L=8 R=76 T=14 B=14
+                  - **"5"** · `10×22` · margins L=45 R=45 T=11 B=11
+                  - **"Plus"** · `16×16` · margins L=76 R=8 T=14 B=14
+                - **"Frame 1618872169"** · `100×44` · margins L=8 R=8 T=218 B=0
+                  - ↔ **21px** between "icon_line/Minus" → "5"
+                  - ↔ **21px** between "5" → "Plus"
+                  - **"icon_line/Minus"** · `16×16` · margins L=8 R=76 T=14 B=14
+                  - **"5"** · `10×22` · margins L=45 R=45 T=11 B=11
+                  - **"Plus"** · `16×16` · margins L=76 R=8 T=14 B=14
+              - **"Frame 1618872460"** · `100×262` · margins L=175 R=0 T=0 B=0
+                - **"Marks"** · `100×22` · margins L=0 R=0 T=0 B=240
+                - **"Frame 1618872169"** · `100×44` · margins L=0 R=0 T=38 B=180
+                  - ↔ **23px** between "icon_line/Minus" → "1"
+                  - ↔ **23px** between "1" → "Plus"
+                  - **"icon_line/Minus"** · `16×16` · margins L=8 R=76 T=14 B=14
+                  - **"1"** · `6×22` · margins L=47 R=47 T=11 B=11
+                  - **"Plus"** · `16×16` · margins L=76 R=8 T=14 B=14
+                - **"Frame 1618872169"** · `100×44` · margins L=0 R=0 T=98 B=120
+                  - ↔ **21px** between "icon_line/Minus" → "2"
+                  - ↔ **21px** between "2" → "Plus"
+                  - **"icon_line/Minus"** · `16×16` · margins L=8 R=76 T=14 B=14
+                  - **"2"** · `10×22` · margins L=45 R=45 T=11 B=11
+                  - **"Plus"** · `16×16` · margins L=76 R=8 T=14 B=14
+                - **"Frame 1618872169"** · `100×44` · margins L=0 R=0 T=158 B=60
+                  - ↔ **21px** between "icon_line/Minus" → "5"
+                  - ↔ **21px** between "5" → "Plus"
+                  - **"icon_line/Minus"** · `16×16` · margins L=8 R=76 T=14 B=14
+                  - **"5"** · `10×22` · margins L=45 R=45 T=11 B=11
+                  - **"Plus"** · `16×16` · margins L=76 R=8 T=14 B=14
+                - **"Frame 1618872169"** · `100×44` · margins L=0 R=0 T=218 B=0
+                  - ↔ **21px** between "icon_line/Minus" → "5"
+                  - ↔ **21px** between "5" → "Plus"
+                  - **"icon_line/Minus"** · `16×16` · margins L=8 R=76 T=14 B=14
+                  - **"5"** · `10×22` · margins L=45 R=45 T=11 B=11
+                  - **"Plus"** · `16×16` · margins L=76 R=8 T=14 B=14
+          - **"Frame 1984077510"** · `150×44` · margins L=596 R=0 T=330 B=0
+            - **"Total Questions :  25"** · `150×18` · margins L=0 R=0 T=0 B=26
+            - **"Total Marks :  60"** · `150×18` · margins L=0 R=0 T=26 B=0
+        - **"Frame 1984077522"** · `746×132` · margins L=0 R=0 T=732 B=0
+          - **"Additional Information (For better output)"** · `597×22` · margins L=0 R=149 T=0 B=110
+          - **"Frame 1984077611"** · `746×102` · margins L=0 R=0 T=30 B=0
+            - **"e.g Generate a question paper for 3 hour exam duration..."** · `714×20` · margins L=16 R=16 T=16 B=66
+            - **"Frame 1984077290"** · `36×36` · margins L=694 R=16 T=50 B=16
+              - **"icon_filled/Mic"** · `16.36×16.36` · margins L=9.82 R=9.82 T=9.82 B=9.82
+                - **"Icons 24/@ Icon Grid / Circle"** · `16.36×16.36` · margins L=0 R=0 T=0 B=0
+                  - **"Circle"** · `16.36×16.36` · margins L=0 R=0 T=0 B=0
+    - **"Frame 1984077363"** · `810×46` · margins L=146.50 R=146.50 T=1172 B=44
+      - ↔ **570px** between "Primary Button - White" → "Primary Button - Dark"
+      - **"Primary Button - White"** · `134×46` · margins L=0 R=676 T=0 B=0
+        - ↔ **4px** between "icon_line/Arrow_Left" → "Previous"
+        - **"icon_line/Arrow_Left"** · `20×20` · margins L=24 R=90 T=13 B=13
+        - **"Previous"** · `62×22` · margins L=48 R=24 T=12 B=12
+      - **"Primary Button - Dark"** · `106×46` · margins L=704 R=0 T=0 B=0
+        - ↔ **4px** between "Next" → "icon_line/Arrow_Right"
+        - **"Next"** · `34×22` · margins L=24 R=48 T=12 B=12
+        - **"icon_line/Arrow_Right"** · `20×20` · margins L=62 R=24 T=13 B=13
+  - **"Side Bar"** · `304×744` · margins L=12 R=1124 T=12 B=584
+    - **"Frame 39962"** · `251×418` · margins L=26.50 R=26.50 T=24 B=302
+      - **"Frame 1618872393"** · `251×40` · margins L=0 R=0 T=0 B=378
+        - **"Frame 1984077293"** · `136×40` · margins L=0 R=115 T=0 B=0
+          - ↔ **8px** between "logo 2" → "VedaAI"
+          - **"logo 2"** · `40×40` · margins L=0 R=96 T=0 B=0
+            - **"background"** · `40×40` · margins L=0 R=0 T=0 B=0
+            - **"Group 5"** · `28×19.42` · margins L=6 R=6 T=11 B=9.58
+          - **"VedaAI"** · `88×20` · margins L=48 R=0 T=10 B=10
+      - **"Frame 18"** · `251×42` · margins L=0 R=0 T=96 B=280
+        - **"Frame 17"** · `251×42` · margins L=0 R=0 T=0 B=0
+          - ↔ **10px** between "Frame 1618872409" → "Create Assignment"
+          - **"Frame 1618872409"** · `18.32×17.32` · margins L=42.84 R=189.84 T=12.34 B=12.34
+          - **"Create Assignment"** · `137×28` · margins L=71.16 R=42.84 T=7 B=7
+      - **"Menu"** · `251×224` · margins L=0 R=0 T=194 B=0
+        - **"Dashboard"** · `254×40` · margins L=0 R=-3 T=0 B=184
+          - ↔ **8px** between ".Icon" → "Home"
+          - **".Icon"** · `20×20` · margins L=12 R=222 T=10 B=10
+          - **"Home"** · `202×22` · margins L=40 R=12 T=9 B=9
+        - **"Menu"** · `251×38` · margins L=0 R=0 T=48 B=138
+          - **"Settings"** · `251×38` · margins L=0 R=0 T=0 B=0
+            - **"My Groups"** · `199×22` · margins L=40 R=12 T=8 B=8
+        - **"Settings"** · `254×38` · margins L=0 R=-3 T=94 B=92
+          - ↔ **8px** between "icon_line/file-text" → "Assignments"
+          - **"icon_line/file-text"** · `20×20` · margins L=12 R=222 T=9 B=9
+          - **"Assignments"** · `202×22` · margins L=40 R=12 T=8 B=8
+        - **"Settings"** · `254×38` · margins L=0 R=-3 T=140 B=46
+          - ↔ **8px** between "Book" → "AI Teacher’s Toolkit"
+          - **"Book"** · `20×20` · margins L=12 R=222 T=9 B=9
+          - **"AI Teacher’s Toolkit"** · `202×22` · margins L=40 R=12 T=8 B=8
+        - **"Credit Report"** · `254×38` · margins L=0 R=-3 T=186 B=0
+          - ↔ **8px** between ".Icon" → "My Library"
+          - ↔ **8px** between "My Library" → "Frame 41"
+          - **".Icon"** · `20×20` · margins L=12 R=222 T=9 B=9
+          - **"My Library"** · `157×22` · margins L=40 R=57 T=8 B=8
+          - **"Frame 41"** · `37×20` · margins L=205 R=12 T=9 B=9
+            - **"32"** · `17×20` · margins L=10 R=10 T=0 B=0
+        - **"Settings"** · `251×38` · margins L=0 R=0 T=140 B=46
+          - ↔ **8px** between "icon_line/file-text_plus" → "Review"
+          - **"icon_line/file-text_plus"** · `20×20` · margins L=12 R=219 T=9 B=9
+          - **"Review"** · `199×22` · margins L=40 R=12 T=8 B=8
+        - **"Settings"** · `251×38` · margins L=0 R=0 T=186 B=0
+          - ↔ **8px** between "icon_line/Bar-chart_up" → "Analytics"
+          - **"icon_line/Bar-chart_up"** · `20×20` · margins L=12 R=219 T=9 B=9
+          - **"Analytics"** · `199×22` · margins L=40 R=12 T=8 B=8
+    - **"Frame 1984077460"** · `256×126` · margins L=24 R=24 T=594 B=24
+      - **"Settings"** · `256×38` · margins L=0 R=0 T=0 B=88
+        - ↔ **8px** between "icon_line/Setting" → "Settings"
+        - **"icon_line/Setting"** · `20×20` · margins L=12 R=224 T=9 B=9
+        - **"Settings"** · `204×22` · margins L=40 R=12 T=8 B=8
+      - **"Frame 39959"** · `256×80` · margins L=0 R=0 T=46 B=0
+        - **"Frame 39958"** · `232×56` · margins L=12 R=12 T=12 B=12
+          - ↔ **8px** between "Avatar" → "Content"
+          - **"Avatar"** · `59×56` · margins L=0 R=173 T=0 B=0
+          - **"Content"** · `165×44` · margins L=67 R=0 T=6 B=6
+            - **"Delhi Public School"** · `165×22` · margins L=0 R=0 T=0 B=22
+            - **"Bokaro Steel City"** · `165×22` · margins L=0 R=0 T=22 B=0
+  - **"Frame 1618872397"** · `1100×56` · margins L=327 R=13 T=12 B=1272
+    - ↔ **10px** between "Frame 1984077293" → "Frame 1618872410"
+    - ↔ **10px** between "Frame 1618872410" → "Frame 1618872411"
+    - ↔ **10px** between "Frame 1618872411" → "Frame 1984077287"
+    - **"Frame 1984077293"** · `40×40` · margins L=24 R=1036 T=8 B=8
+      - **"Frame 1984077294"** · `40×40` · margins L=0 R=0 T=0 B=0
+        - **"icon_line/Arrow_Left"** · `24×24` · margins L=8 R=8 T=8 B=8
+    - **"Frame 1618872410"** · `801×19` · margins L=74 R=225 T=18.50 B=18.50
+      - **"Assignment"** · `87×19` · margins L=0 R=714 T=0 B=0
+    - **"Frame 1618872411"** · `36×36` · margins L=885 R=179 T=10 B=10
+      - **".Icon"** · `24×24` · margins L=6 R=6 T=6 B=6
+      - **"Ellipse 9"** · `8×8` · margins L=27 R=1 T=1 B=27
+    - **"Frame 1984077287"** · `157×44` · margins L=931 R=12 T=6 B=6
+      - ↔ **8px** between "Frame 1618872412" → "Frame 1984077288"
+      - **"Frame 1618872412"** · `32×32` · margins L=12 R=113 T=6 B=6
+      - **"Frame 1984077288"** · `93×24` · margins L=52 R=12 T=10 B=10
+        - ↔ **4px** between "John Doe" → "Chevron down"
+        - **"John Doe"** · `65×19` · margins L=0 R=28 T=2.50 B=2.50
+        - **"Chevron down"** · `24×24` · margins L=69 R=0 T=0 B=0
+
+---
+
+## F. Upload Material – Selector (Mobile) (`43:9947`)
+
+- **"Upload Material - Selector(Mobile)"** · `393×1397`
+  - ↕ **1134px** between "Address Bar iOS / X Chrome" → "Frame 1984077606"
+  - **"Frame 1984077582"** · `373×1040` · margins L=10 R=10 T=190 B=167
+    - **"Frame 1984077583"** · `349×48` · margins L=12 R=12 T=0 B=992
+      - **"Frame 1984077380"** · `48×48` · margins L=0 R=301 T=0 B=0
+        - **"Arrow left"** · `24×24` · margins L=12 R=12 T=12 B=12
+      - **"Frame 1618872418"** · `349×22` · margins L=0 R=0 T=13 B=13
+        - **"Create Assignment"** · `140×22` · margins L=104.50 R=104.50 T=0 B=0
+    - **"Frame 1984077364"** · `349×0` · margins L=12 R=12 T=72 B=968
+      - **"Frame 1984077355"** · `349×0` · margins L=0 R=0 T=0 B=0
+        - ↔ **12px** between "Frame 1984077353" → "Frame 1984077354"
+        - **"Frame 1984077353"** · `168.50×0` · margins L=0 R=180.50 T=0 B=0
+        - **"Frame 1984077354"** · `168.50×0` · margins L=180.50 R=0 T=0 B=0
+    - **"Frame 1984077584"** · `349×944` · margins L=12 R=12 T=96 B=0
+      - **"Frame 1984077347"** · `251×50` · margins L=16 R=82 T=32 B=862
+        - **"Assignment Details"** · `176×28` · margins L=0 R=75 T=0 B=22
+        - **"Basic information about your assignment"** · `251×20` · margins L=0 R=0 T=30 B=0
+      - **"Frame 1984077364"** · `317×806` · margins L=16 R=16 T=106 B=32
+        - **"Frame 1984077301"** · `317×258` · margins L=0 R=0 T=0 B=548
+          - **"Frame 1618872469"** · `317×202` · margins L=0 R=0 T=0 B=56
+            - **"Frame 1618872514"** · `40×40` · margins L=138.50 R=138.50 T=24 B=138
+              - **"Upload cloud"** · `24×24` · margins L=8 R=8 T=8 B=8
+            - **"Frame 1618872516"** · `253×46` · margins L=32 R=32 T=80 B=76
+              - **"Choose a file or drag & drop it here"** · `253×22` · margins L=0 R=0 T=0 B=24
+              - **"JPEG, PNG, upto 10MB"** · `253×20` · margins L=0 R=0 T=26 B=0
+            - **"Primary Button - White"** · `127×36` · margins L=95 R=95 T=142 B=24
+              - **"Browse Files"** · `79×20` · margins L=24 R=24 T=8 B=8
+              - **"icon_line/Arrow_Right"** · `16×16` · margins L=85 R=26 T=10 B=10
+          - **"Upload images of your preferred document/image"** · `317×44` · margins L=0 R=0 T=214 B=0
+        - **"Frame 1618872464"** · `317×74` · margins L=0 R=0 T=274 B=458
+          - **"Frame 1618872457"** · `317×74` · margins L=0 R=0 T=0 B=0
+            - **"Due Date"** · `317×22` · margins L=0 R=0 T=0 B=52
+            - **"Frame 1618872169"** · `317×44` · margins L=0 R=0 T=30 B=0
+              - ↔ **165px** between "DD-MM-YYYY" → "icon_line/Calendar_plus"
+              - **"DD-MM-YYYY"** · `96×22` · margins L=16 R=205 T=11 B=11
+              - **"icon_line/Calendar_plus"** · `24×24` · margins L=277 R=16 T=10 B=10
+        - **"Frame 1618872171"** · `317×442` · margins L=0 R=0 T=364 B=0
+          - **"Frame 1984077498"** · `317×382` · margins L=0 R=0 T=0 B=60
+            - **"Frame 1618872458"** · `317×382` · margins L=0 R=0 T=0 B=0
+              - **"Question Type"** · `317×22` · margins L=0 R=0 T=0 B=360
+              - **"Frame 1984077592"** · `317×138` · margins L=0 R=0 T=38 B=206
+                - **"Frame 1984077504"** · `293×20` · margins L=12 R=12 T=12 B=106
+                  - ↔ **76px** between "Frame 1984077593" → "X"
+                  - **"Frame 1984077593"** · `201×20` · margins L=0 R=92 T=0 B=0
+                    - ↔ **24px** between "Multiple Choice Questions" → "Chevron down"
+                    - **"Multiple Choice Questions"** · `161×20` · margins L=0 R=40 T=0 B=0
+                    - **"Chevron down"** · `16×16` · margins L=185 R=0 T=2 B=2
+                  - **"X"** · `16×16` · margins L=277 R=0 T=2 B=2
+                - **"Frame 1984077589"** · `293×82` · margins L=12 R=12 T=44 B=12
+                  - ↔ **12px** between "Frame 1984077590" → "Frame 1984077591"
+                  - **"Frame 1984077590"** · `132.50×66` · margins L=8 R=152.50 T=8 B=8
+                    - **"No. of Questions"** · `102×20` · margins L=15.25 R=15.25 T=0 B=46
+                    - **"Frame 1618872169"** · `132.50×38` · margins L=0 R=0 T=28 B=0
+                      - ↔ **37.25px** between "icon_line/Minus" → "4"
+                      - ↔ **37.25px** between "4" → "Plus"
+                      - **"icon_line/Minus"** · `16×16` · margins L=8 R=108.50 T=11 B=11
+                      - **"4"** · `10×22` · margins L=61.25 R=61.25 T=8 B=8
+                      - **"Plus"** · `16×16` · margins L=108.50 R=8 T=11 B=11
+                  - **"Frame 1984077591"** · `132.50×66` · margins L=152.50 R=8 T=8 B=8
+                    - **"Marks"** · `40×20` · margins L=46.25 R=46.25 T=0 B=46
+                    - **"Frame 1984077510"** · `132.50×38` · margins L=0 R=0 T=28 B=0
+                      - ↔ **37.25px** between "icon_line/Minus" → "4"
+                      - ↔ **37.25px** between "4" → "Plus"
+                      - **"icon_line/Minus"** · `16×16` · margins L=8 R=108.50 T=11 B=11
+                      - **"4"** · `10×22` · margins L=61.25 R=61.25 T=8 B=8
+                      - **"Plus"** · `16×16` · margins L=108.50 R=8 T=11 B=11
+              - **"Frame 1984077593"** · `317×138` · margins L=0 R=0 T=192 B=52
+                - **"Frame 1984077504"** · `293×20` · margins L=12 R=12 T=12 B=106
+                  - ↔ **136px** between "Frame 1984077593" → "X"
+                  - **"Frame 1984077593"** · `141×20` · margins L=0 R=152 T=0 B=0
+                    - ↔ **24px** between "Short Questions" → "Chevron down"
+                    - **"Short Questions"** · `101×20` · margins L=0 R=40 T=0 B=0
+                    - **"Chevron down"** · `16×16` · margins L=125 R=0 T=2 B=2
+                  - **"X"** · `16×16` · margins L=277 R=0 T=2 B=2
+                - **"Frame 1984077589"** · `293×82` · margins L=12 R=12 T=44 B=12
+                  - ↔ **12px** between "Frame 1984077590" → "Frame 1984077591"
+                  - **"Frame 1984077590"** · `132.50×66` · margins L=8 R=152.50 T=8 B=8
+                    - **"No. of Questions"** · `102×20` · margins L=15.25 R=15.25 T=0 B=46
+                    - **"Frame 1618872169"** · `132.50×38` · margins L=0 R=0 T=28 B=0
+                      - ↔ **37.25px** between "icon_line/Minus" → "4"
+                      - ↔ **37.25px** between "4" → "Plus"
+                      - **"icon_line/Minus"** · `16×16` · margins L=8 R=108.50 T=11 B=11
+                      - **"4"** · `10×22` · margins L=61.25 R=61.25 T=8 B=8
+                      - **"Plus"** · `16×16` · margins L=108.50 R=8 T=11 B=11
+                  - **"Frame 1984077591"** · `132.50×66` · margins L=152.50 R=8 T=8 B=8
+                    - **"Marks"** · `40×20` · margins L=46.25 R=46.25 T=0 B=46
+                    - **"Frame 1984077510"** · `132.50×38` · margins L=0 R=0 T=28 B=0
+                      - ↔ **37.25px** between "icon_line/Minus" → "4"
+                      - ↔ **37.25px** between "4" → "Plus"
+                      - **"icon_line/Minus"** · `16×16` · margins L=8 R=108.50 T=11 B=11
+                      - **"4"** · `10×22` · margins L=61.25 R=61.25 T=8 B=8
+                      - **"Plus"** · `16×16` · margins L=108.50 R=8 T=11 B=11
+              - **"Frame 1984077500"** · `164×36` · margins L=0 R=153 T=346 B=0
+                - ↔ **8px** between "Primary Button - White" → "Add Question Type"
+                - **"Primary Button - White"** · `36×36` · margins L=0 R=128 T=0 B=0
+                  - **"icon_line/Plus"** · `20×20` · margins L=8 R=8 T=8 B=8
+                    - **"Group 33489"** · `15×15` · margins L=2.50 R=2.50 T=2.50 B=2.50
+                - **"Add Question Type"** · `120×20` · margins L=44 R=0 T=8 B=8
+          - **"Frame 1984077510"** · `150×44` · margins L=167 R=0 T=398 B=0
+            - **"Total Questions :  25"** · `150×18` · margins L=0 R=0 T=0 B=26
+            - **"Total Marks :  60"** · `150×18` · margins L=0 R=0 T=26 B=0
+  - **"Address Bar iOS / X Chrome"** · `393×105` · margins L=0 R=0 T=0 B=1292
+    - **"Background"** · `393×105` · margins L=0 R=0 T=0 B=0
+      - **"Background"** · `393×105` · margins L=0 R=0 T=0 B=0
+      - **"iOS / Separator"** · `393×1` · margins L=0 R=0 T=104 B=0
+        - **"Line"** · `393×0` · margins L=0 R=0 T=1 B=0
+    - **"iOS / Status Bar / X / Default"** · `393×44` · margins L=0 R=0 T=0 B=61
+      - ↔ **213.86px** between "Action" → "Container"
+      - **"Action"** · `56.29×18` · margins L=20.85 R=315.86 T=19 B=7
+        - **"9:41"** · `54×18` · margins L=0 R=2.29 T=0 B=0
+      - **"Container"** · `68×14` · margins L=291 R=34 T=21 B=9
+        - **"􀛨"** · `29×20` · margins L=41 R=-2 T=-3 B=-3
+        - **"􀙇"** · `19×17` · margins L=21 R=28 T=-1 B=-2
+    - **"iOS / Chrome / Address Bar"** · `373×40` · margins L=10 R=10 T=54 B=11
+      - **"bar-input"** · `373×40` · margins L=0 R=0 T=0 B=0
+      - **"iOS / Chrome / Address"** · `173×19` · margins L=101 R=99 T=11 B=10
+        - **"web-to-figma.design"** · `158×19` · margins L=15 R=0 T=0 B=0
+  - **"Frame 1984077606"** · `393×158` · margins L=0 R=0 T=1239 B=0
+    - **"Frame 1984077596"** · `253×46` · margins L=70 R=70 T=8 B=104
+      - ↔ **13px** between "Primary Button - White" → "Primary Button - Dark"
+      - **"Primary Button - White"** · `134×46` · margins L=0 R=119 T=0 B=0
+        - ↔ **4px** between "icon_line/Arrow_Left" → "Previous"
+        - **"icon_line/Arrow_Left"** · `20×20` · margins L=24 R=90 T=13 B=13
+        - **"Previous"** · `62×22` · margins L=48 R=24 T=12 B=12
+      - **"Primary Button - Dark"** · `106×46` · margins L=147 R=0 T=0 B=0
+        - ↔ **4px** between "Next" → "icon_line/Arrow_Right"
+        - **"Next"** · `34×22` · margins L=24 R=48 T=12 B=12
+        - **"icon_line/Arrow_Right"** · `20×20` · margins L=62 R=24 T=13 B=13
+    - **"Frame 1618872293"** · `373×72` · margins L=10 R=10 T=66 B=20
+      - ↔ **39px** between "Frame 1984077234" → "Frame 1618872292"
+      - ↔ **39px** between "Frame 1618872292" → "Frame 1618872293"
+      - ↔ **39px** between "Frame 1618872293" → "Frame 1984077235"
+      - **"Frame 1984077234"** · `52×52` · margins L=24 R=297 T=10 B=10
+        - **"Frame 1984077232"** · `33×39` · margins L=9.50 R=9.50 T=6.50 B=6.50
+          - **"Frame 1618872292"** · `18×18` · margins L=7.50 R=7.50 T=0 B=21
+            - **"Frame 1618872290"** · `18×8.49` · margins L=0 R=0 T=0 B=9.51
+              - ↔ **1.02px** between "Rectangle 8" → "Rectangle 7"
+              - **"Rectangle 8"** · `8.49×8.49` · margins L=0 R=9.51 T=0 B=0
+              - **"Rectangle 7"** · `8.49×8.49` · margins L=9.51 R=0 T=0 B=0
+            - **"Frame 1618872291"** · `18×8.49` · margins L=0 R=0 T=9.51 B=0
+              - ↔ **1.02px** between "Rectangle 10" → "Rectangle 9"
+              - **"Rectangle 10"** · `8.49×8.49` · margins L=0 R=9.51 T=0 B=0
+              - **"Rectangle 9"** · `8.49×8.49` · margins L=9.51 R=0 T=0 B=0
+          - **"Home"** · `33×17` · margins L=0 R=0 T=22 B=0
+      - **"Frame 1618872292"** · `52×52` · margins L=115 R=206 T=10 B=10
+        - **"Frame 1984077233"** · `60×41` · margins L=-4 R=-4 T=5.50 B=5.50
+          - **"icon_filled/Calendar"** · `20×20` · margins L=20 R=20 T=0 B=21
+          - **"My Groups"** · `60×17` · margins L=0 R=0 T=24 B=0
+      - **"Frame 1618872293"** · `52×52` · margins L=206 R=115 T=10 B=10
+        - **"icon_filled/file-text_plus"** · `20×20` · margins L=16 R=16 T=5.50 B=26.50
+        - **"Library"** · `39×17` · margins L=6.50 R=6.50 T=29.50 B=5.50
+      - **"Frame 1984077235"** · `52×52` · margins L=297 R=24 T=10 B=10
+        - **"Frame 1618872409"** · `20×20` · margins L=16 R=16 T=5.50 B=26.50
+        - **"AI Toolkit"** · `49×17` · margins L=1.50 R=1.50 T=29.50 B=5.50
+  - **"Frame 1984077205"** · `393×81` · margins L=0 R=0 T=105 B=1211
+    - **"Frame 1618872397"** · `373×56` · margins L=10 R=10 T=12.50 B=12.50
+      - ↔ **130px** between "Frame 1984077294" → "Frame 1984077614"
+      - **"Frame 1984077294"** · `99×28` · margins L=12 R=262 T=14 B=14
+        - ↔ **8px** between "Component 1" → "VedaAI"
+        - **"Component 1"** · `28×28` · margins L=0 R=71 T=0 B=0
+          - **"background"** · `28×28` · margins L=0 R=0 T=0 B=0
+        - **"VedaAI"** · `63×28` · margins L=36 R=0 T=0 B=0
+      - **"Frame 1984077614"** · `116×36` · margins L=241 R=16 T=10 B=10
+        - ↔ **12px** between "Frame 1618872411" → "Frame 1618872412"
+        - ↔ **12px** between "Frame 1618872412" → "menu"
+        - **"Frame 1618872411"** · `36×36` · margins L=0 R=80 T=0 B=0
+          - **".Icon"** · `24×24` · margins L=6 R=6 T=6 B=6
+          - **"Ellipse 9"** · `8×8` · margins L=27 R=1 T=1 B=27
+        - **"Frame 1618872412"** · `32×32` · margins L=48 R=36 T=2 B=2
+        - **"menu"** · `24×24` · margins L=92 R=0 T=6 B=6
+
+---
+
+## G. Assignment Output (Desktop) (`43:9771`)
+
+- **"Assignment Ouput(Desktop)"** · `1440×1715`
+  - ↔ **11px** between "Side Bar" → "Frame 1618872395"
+  - **"Side Bar"** · `304×724` · margins L=12 R=1124 T=12 B=979
+    - **"Frame 39962"** · `251×418` · margins L=26.50 R=26.50 T=24 B=282
+      - **"Frame 1618872393"** · `251×40` · margins L=0 R=0 T=0 B=378
+        - **"Frame 1984077293"** · `136×40` · margins L=0 R=115 T=0 B=0
+          - ↔ **8px** between "Component 1" → "VedaAI"
+          - **"Component 1"** · `40×40` · margins L=0 R=96 T=0 B=0
+            - **"background"** · `40×40` · margins L=0 R=0 T=0 B=0
+          - **"VedaAI"** · `88×20` · margins L=48 R=0 T=10 B=10
+      - **"Frame 18"** · `251×42` · margins L=0 R=0 T=96 B=280
+        - **"Frame 17"** · `251×42` · margins L=0 R=0 T=0 B=0
+          - ↔ **10px** between "Frame 1618872409" → "AI Teacher’s Toolkit"
+          - **"Frame 1618872409"** · `18.32×17.32` · margins L=43.34 R=189.34 T=12.34 B=12.34
+          - **"AI Teacher’s Toolkit"** · `136×28` · margins L=71.66 R=43.34 T=7 B=7
+      - **"Menu"** · `251×224` · margins L=0 R=0 T=194 B=0
+        - **"Dashboard"** · `254×40` · margins L=0 R=-3 T=0 B=184
+          - ↔ **8px** between ".Icon" → "Home"
+          - **".Icon"** · `20×20` · margins L=12 R=222 T=10 B=10
+          - **"Home"** · `202×22` · margins L=40 R=12 T=9 B=9
+        - **"Menu"** · `254×38` · margins L=0 R=-3 T=48 B=138
+          - **"Settings"** · `254×38` · margins L=0 R=0 T=0 B=0
+            - **"My Groups"** · `202×22` · margins L=40 R=12 T=8 B=8
+        - **"Settings"** · `254×38` · margins L=0 R=-3 T=94 B=92
+          - ↔ **8px** between "icon_line/file-text" → "Assignments"
+          - ↔ **8px** between "Assignments" → "Frame 41"
+          - **"icon_line/file-text"** · `20×20` · margins L=12 R=222 T=9 B=9
+          - **"Assignments"** · `157×22` · margins L=40 R=57 T=8 B=8
+          - **"Frame 41"** · `37×20` · margins L=205 R=12 T=9 B=9
+            - **"32"** · `17×20` · margins L=10 R=10 T=0 B=0
+        - **"Settings"** · `254×38` · margins L=0 R=-3 T=140 B=46
+          - ↔ **8px** between "Book" → "AI Teacher’s Toolkit"
+          - **"Book"** · `20×20` · margins L=12 R=222 T=9 B=9
+          - **"AI Teacher’s Toolkit"** · `202×22` · margins L=40 R=12 T=8 B=8
+        - **"Credit Report"** · `254×38` · margins L=0 R=-3 T=186 B=0
+          - ↔ **8px** between ".Icon" → "My Library"
+          - **".Icon"** · `20×20` · margins L=12 R=222 T=9 B=9
+          - **"My Library"** · `202×22` · margins L=40 R=12 T=8 B=8
+          - **"Frame 41"** · `37×20` · margins L=205 R=12 T=9 B=9
+            - **"32"** · `17×20` · margins L=10 R=10 T=0 B=0
+        - **"Settings"** · `251×38` · margins L=0 R=0 T=140 B=46
+          - ↔ **8px** between "icon_line/file-text_plus" → "Review"
+          - **"icon_line/file-text_plus"** · `20×20` · margins L=12 R=219 T=9 B=9
+          - **"Review"** · `199×22` · margins L=40 R=12 T=8 B=8
+        - **"Settings"** · `251×38` · margins L=0 R=0 T=186 B=0
+          - ↔ **8px** between "icon_line/Bar-chart_up" → "Analytics"
+          - **"icon_line/Bar-chart_up"** · `20×20` · margins L=12 R=219 T=9 B=9
+          - **"Analytics"** · `199×22` · margins L=40 R=12 T=8 B=8
+    - **"Frame 1984077460"** · `256×130` · margins L=24 R=24 T=570 B=24
+      - **"Settings"** · `256×38` · margins L=0 R=0 T=0 B=92
+        - ↔ **8px** between "icon_line/Setting" → "Settings"
+        - **"icon_line/Setting"** · `20×20` · margins L=12 R=224 T=9 B=9
+        - **"Settings"** · `204×22` · margins L=40 R=12 T=8 B=8
+      - **"Frame 39959"** · `256×84` · margins L=0 R=0 T=46 B=0
+        - **"Frame 39958"** · `232×60` · margins L=12 R=12 T=12 B=12
+          - ↔ **8px** between "image 3" → "Content"
+          - **"image 3"** · `59×60` · margins L=0 R=173 T=0 B=0
+          - **"Content"** · `165×44` · margins L=67 R=0 T=8 B=8
+            - **"Delhi Public School"** · `165×22` · margins L=0 R=0 T=0 B=22
+            - **"Bokaro Steel City"** · `165×22` · margins L=0 R=0 T=22 B=0
+  - **"Frame 1618872395"** · `1100×1681` · margins L=327 R=13 T=82 B=-48
+    - **"Frame 1618872450"** · `1060×164` · margins L=20 R=20 T=20 B=1497
+      - **"Frame 1618872453"** · `996×116` · margins L=32 R=32 T=24 B=24
+        - **"Frame 1618872452"** · `996×56` · margins L=0 R=0 T=0 B=60
+          - **"Frame 1984077288"** · `996×56` · margins L=0 R=0 T=0 B=0
+            - **"Certainly, Lakshya! Here are customized Question Paper fo…"** · `996×56` · margins L=0 R=0 T=0 B=0
+        - **"Frame 1618872463"** · `200×44` · margins L=0 R=796 T=72 B=0
+          - **"Frame 1618872346"** · `200×44` · margins L=0 R=0 T=0 B=0
+            - **"Frame 1984077260"** · `152×24` · margins L=24 R=24 T=10 B=10
+              - ↔ **4px** between "Frame" → "Download as PDF"
+              - **"Frame"** · `24×24` · margins L=0 R=128 T=0 B=0
+              - **"Download as PDF"** · `124×22` · margins L=28 R=0 T=1 B=1
+    - **"Frame 1618872449"** · `1060×1465` · margins L=20 R=20 T=196 B=20
+      - **"Delhi Public School, Sector-4, Bokaro Subject: English Cl…"** · `996×124` · margins L=32 R=32 T=32 B=1309
+      - **"Frame 1984077298"** · `996×29` · margins L=32 R=32 T=180 B=1256
+        - ↔ **622px** between "Time Allowed: 45 minutes" → "Maximum Marks: 20"
+        - **"Time Allowed: 45 minutes"** · `209×29` · margins L=0 R=787 T=0 B=0
+        - **"Maximum Marks: 20"** · `165×29` · margins L=831 R=0 T=0 B=0
+      - **"Frame 1984077299"** · `996×29` · margins L=32 R=32 T=233 B=1203
+        - **"All questions are compulsory unless stated otherwise."** · `996×29` · margins L=0 R=0 T=0 B=0
+      - **"Frame 1984077300"** · `996×87` · margins L=32 R=32 T=286 B=1092
+        - **"Name: ______________________"** · `230×29` · margins L=0 R=766 T=0 B=58
+        - **"Roll Number: ________________"** · `232×29` · margins L=0 R=764 T=29 B=29
+        - **"Class: 5th Section: __________"** · `232×29` · margins L=0 R=764 T=58 B=0
+      - **"Frame 1984077301"** · `996×38` · margins L=32 R=32 T=397 B=1030
+        - **"Section A"** · `996×38` · margins L=0 R=0 T=0 B=0
+      - **"Frame 1984077302"** · `996×55` · margins L=32 R=32 T=459 B=951
+        - **"Short Answer Questions Attempt all questions. Each questi…"** · `996×55` · margins L=0 R=0 T=0 B=0
+      - **"Frame 1984077303"** · `996×1020` · margins L=32 R=32 T=538 B=-93
+        - **"[Easy] Define electroplating. Explain its purpose. [2 Mar…"** · `996×1020` · margins L=0 R=0 T=0 B=0
+  - **"Frame 1618872397"** · `1100×56` · margins L=327 R=13 T=12 B=1647
+    - ↔ **10px** between "Frame 1984077293" → "Frame 1618872410"
+    - ↔ **10px** between "Frame 1618872410" → "Frame 1618872411"
+    - ↔ **10px** between "Frame 1618872411" → "Frame 1984077287"
+    - **"Frame 1984077293"** · `40×40` · margins L=24 R=1036 T=8 B=8
+      - **"Frame 1984077294"** · `40×40` · margins L=0 R=0 T=0 B=0
+        - **"icon_line/Arrow_Left"** · `24×24` · margins L=8 R=8 T=8 B=8
+    - **"Frame 1618872410"** · `801×19` · margins L=74 R=225 T=18.50 B=18.50
+      - **"Frame 1984077625"** · `111.32×19` · margins L=0 R=689.68 T=0 B=0
+        - ↔ **8px** between "Frame 1618872409" → "Create New"
+        - **"Frame 1618872409"** · `18.32×17.32` · margins L=0 R=93 T=0.84 B=0.84
+        - **"Create New"** · `85×19` · margins L=26.32 R=0 T=0 B=0
+    - **"Frame 1618872411"** · `36×36` · margins L=885 R=179 T=10 B=10
+      - **".Icon"** · `24×24` · margins L=6 R=6 T=6 B=6
+      - **"Ellipse 9"** · `8×8` · margins L=27 R=1 T=1 B=27
+    - **"Frame 1984077287"** · `157×44` · margins L=931 R=12 T=6 B=6
+      - ↔ **8px** between "Frame 1618872412" → "Frame 1984077288"
+      - **"Frame 1618872412"** · `32×32` · margins L=12 R=113 T=6 B=6
+      - **"Frame 1984077288"** · `93×24` · margins L=52 R=12 T=10 B=10
+        - ↔ **4px** between "John Doe" → "Chevron down"
+        - **"John Doe"** · `65×19` · margins L=0 R=28 T=2.50 B=2.50
+        - **"Chevron down"** · `24×24` · margins L=69 R=0 T=0 B=0
+
+---
+
+## H. Assignment Output (Mobile) (`43:10103`)
+
+- **"Asignment Ouput(Mobile)"** · `393×2821`
+  - ↕ **2638px** between "Address Bar iOS / X Chrome" → "Tab Bar iOS / X Chrome"
+  - **"Frame 1618872221"** · `373×2621` · margins L=10 R=10 T=190 B=10
+    - **"Frame 1618872450"** · `355×147` · margins L=9 R=9 T=9 B=2465
+      - **"Frame 1618872453"** · `323×51` · margins L=16 R=16 T=24 B=72
+        - **"Frame 1984077288"** · `323×51` · margins L=0 R=0 T=0 B=0
+          - **"Certainly, Lakshya! Here are customized Question Paper fo…"** · `323×51` · margins L=0 R=0 T=0 B=0
+      - **"Frame 1984077321"** · `36×36` · margins L=16 R=303 T=87 B=24
+        - **"Frame 1618872454"** · `36×36` · margins L=0 R=0 T=0 B=0
+          - **"download"** · `20×20` · margins L=8 R=8 T=8 B=8
+    - **"Frame 1984077318"** · `355×2446` · margins L=9 R=9 T=166 B=9
+      - **"Delhi Public School, Sector-4, Bokaro  Subject: English C…"** · `323×124` · margins L=16 R=16 T=24 B=2298
+      - **"Frame 1984077298"** · `323×54` · margins L=16 R=16 T=172 B=2220
+        - **"Time Allowed: 45 minutes"** · `163×22` · margins L=0 R=160 T=0 B=32
+        - **"Maximum Marks: 20"** · `128×22` · margins L=0 R=195 T=32 B=0
+      - **"Frame 1984077299"** · `323×44` · margins L=16 R=16 T=250 B=2152
+        - **"All questions are compulsory unless stated otherwise."** · `323×44` · margins L=0 R=0 T=0 B=0
+      - **"Frame 1984077300"** · `323×66` · margins L=16 R=16 T=318 B=2062
+        - **"Name: ______________________"** · `230×22` · margins L=0 R=93 T=0 B=44
+        - **"Roll Number: ________________"** · `232×22` · margins L=0 R=91 T=22 B=22
+        - **"Class: 5th Section: __________"** · `232×22` · margins L=0 R=91 T=44 B=0
+      - **"Frame 1984077301"** · `323×26` · margins L=16 R=16 T=408 B=2012
+        - **"Section A"** · `323×26` · margins L=0 R=0 T=0 B=0
+      - **"Frame 1984077302"** · `323×44` · margins L=16 R=16 T=458 B=1944
+        - **"Short Answer Questions Attempt all questions. Each questi…"** · `323×44` · margins L=0 R=0 T=0 B=0
+      - **"[Easy] Define electroplating. Explain its purpose. [2 Mar…"** · `323×1896` · margins L=16 R=16 T=526 B=24
+  - **"Address Bar iOS / X Chrome"** · `393×105` · margins L=0 R=0 T=0 B=2716
+    - **"Background"** · `393×105` · margins L=0 R=0 T=0 B=0
+      - **"Background"** · `393×105` · margins L=0 R=0 T=0 B=0
+      - **"iOS / Separator"** · `393×1` · margins L=0 R=0 T=104 B=0
+        - **"Line"** · `393×0` · margins L=0 R=0 T=1 B=0
+    - **"iOS / Status Bar / X / Default"** · `393×44` · margins L=0 R=0 T=0 B=61
+      - ↔ **213.86px** between "Action" → "Container"
+      - **"Action"** · `56.29×18` · margins L=20.85 R=315.86 T=19 B=7
+        - **"9:41"** · `54×18` · margins L=0 R=2.29 T=0 B=0
+      - **"Container"** · `68×14` · margins L=291 R=34 T=21 B=9
+        - **"􀛨"** · `29×20` · margins L=41 R=-2 T=-3 B=-3
+        - **"􀙇"** · `19×17` · margins L=21 R=28 T=-1 B=-2
+    - **"iOS / Chrome / Address Bar"** · `373×40` · margins L=10 R=10 T=54 B=11
+      - **"bar-input"** · `373×40` · margins L=0 R=0 T=0 B=0
+      - **"iOS / Chrome / Address"** · `173×19` · margins L=101 R=99 T=11 B=10
+        - **"web-to-figma.design"** · `158×19` · margins L=15 R=0 T=0 B=0
+  - **"Tab Bar iOS / X Chrome"** · `393×78` · margins L=0 R=0 T=2743 B=0
+    - **"Background"** · `393×78.30` · margins L=0 R=0 T=0 B=-0.30
+      - **"Background"** · `393×78.30` · margins L=0 R=0 T=0 B=0
+      - **"iOS / Separator Top"** · `393×1` · margins L=0 R=0 T=0 B=77.30
+        - **"Line"** · `393×0` · margins L=0 R=0 T=0 B=1
+    - **"iOS / Chrome / Tabs"** · `366×40` · margins L=14 R=13 T=2.30 B=35.70
+      - ↔ **47.50px** between "Go Back" → "Go Forward"
+      - ↔ **47.50px** between "Go Forward" → "Add New Tab"
+      - ↔ **47.50px** between "Add New Tab" → "Chrome Tabs"
+      - ↔ **47.50px** between "Chrome Tabs" → "More Menu"
+      - **"Go Back"** · `34×34` · margins L=0 R=332 T=3 B=3
+      - **"Go Forward"** · `34×34` · margins L=81.50 R=250.50 T=3 B=3
+      - **"Add New Tab"** · `40×40` · margins L=163 R=163 T=0 B=0
+        - **"Ellipse 1"** · `36×36` · margins L=2 R=2 T=2 B=2
+        - **"rounded/content/add"** · `40×40` · margins L=0 R=0 T=0 B=0
+      - **"Chrome Tabs"** · `34×34` · margins L=250.50 R=81.50 T=3 B=3
+      - **"More Menu"** · `34×34` · margins L=332 R=0 T=3 B=3
+    - **"Home Indicator"** · `393×34` · margins L=0 R=0 T=44 B=0
+      - **"Line"** · `135×5` · margins L=129 R=129 T=21 B=8
+  - **"Frame 1984077205"** · `393×81` · margins L=0 R=0 T=105 B=2635
+    - **"Frame 1618872397"** · `373×56` · margins L=10 R=10 T=12.50 B=12.50
+      - ↔ **130px** between "Frame 1984077294" → "Frame 1984077614"
+      - **"Frame 1984077294"** · `99×28` · margins L=12 R=262 T=14 B=14
+        - ↔ **8px** between "Component 1" → "VedaAI"
+        - **"Component 1"** · `28×28` · margins L=0 R=71 T=0 B=0
+          - **"background"** · `28×28` · margins L=0 R=0 T=0 B=0
+        - **"VedaAI"** · `63×28` · margins L=36 R=0 T=0 B=0
+      - **"Frame 1984077614"** · `116×36` · margins L=241 R=16 T=10 B=10
+        - ↔ **12px** between "Frame 1618872411" → "Frame 1618872412"
+        - ↔ **12px** between "Frame 1618872412" → "menu"
+        - **"Frame 1618872411"** · `36×36` · margins L=0 R=80 T=0 B=0
+          - **".Icon"** · `24×24` · margins L=6 R=6 T=6 B=6
+          - **"Ellipse 9"** · `8×8` · margins L=27 R=1 T=1 B=27
+        - **"Frame 1618872412"** · `32×32` · margins L=48 R=36 T=2 B=2
+        - **"menu"** · `24×24` · margins L=92 R=0 T=6 B=6
+
+---
